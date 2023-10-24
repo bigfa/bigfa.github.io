@@ -1,0 +1,25 @@
+baseURL = 'https://bigfa.github.io/'
+languageCode = 'zh-cn'
+timezone = 'Asia/Shanghai'
+defaultContentLanguage = 'zh-cn'
+title = 'bigfa'
+theme = 'farallon'
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  series = 'series'
+
+[Params]
+  search=false
+  description = 'A simple and fast blog framework written in Go.'
+  toc = true
+
+[menu]
+  [[menu.main]]
+  name="关于"
+  url="/about/"
+  weight="1"
+
+[outputs]
+  home = [ "HTML","JSON"]
+  page = ["HTML"]

@@ -1,0 +1,32 @@
+name: Bigfa
+
+on:
+    push:
+        branches:
+            - main # master 更新触发
+
+jobs:
+    build-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  submodules: recursive
+                  fetch-depth: 0
+
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v2
+              with:
+                  hugo-version: latest
+                  extended: true
+
+            - name: Build
+              run: hugo --gc --minify --cleanDestinationDir
+
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  personal_token: ${{ secrets.Bigfa }} # personal_token 这里新建一个 https://github.com/settings/tokens
+                  PUBLISH_BRANCH: gh-pages # 推送到当前 gh-pages 分支
+                  PUBLISH_DIR: ./public # hugo 生成到 public 作为跟目录
+                  commit_message: ${{ github.event.head_commit.message }}
