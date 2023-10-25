@@ -1,0 +1,27 @@
+toggleMenu:
+    other: Toggle Menu
+
+darkMode:
+    other: Dark Mode
+
+copyRight:
+    other: Copyright
+
+translations:
+    other: Translations
+
+article:
+    back:
+        other: back
+
+    tableOfContents:
+        other: TOC
+
+    relatedContent:
+        other: Related Content
+
+    lastUpdatedOn:
+        other: Last update on
+
+    readingTime:
+        other: "reading Time: {{ .Count }} min"
