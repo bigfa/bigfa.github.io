@@ -1,3 +1,6 @@
 [submodule "themes/farallon"]
 	path = themes/farallon
 	url = https://github.com/bigfa/hugo-theme-farallon.git
+[submodule "themes/notability"]
+	path = themes/notability
+	url = https://github.com/bigfa/hugo-theme-notability.git
