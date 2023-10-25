@@ -19,7 +19,7 @@ theme = 'farallon'
     url="/en/movies/"
     weight="1"
     [[languages.en.menu.main]]
-    name="Categories分类"
+    name="Categories"
     url="/categories/"
     weight="1"
     [[languages.en.menu.main]]
