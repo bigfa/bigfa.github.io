@@ -2,7 +2,6 @@ baseURL = 'https://bigfa.github.io/'
 languageCode = 'zh-cn'
 timezone = 'Asia/Shanghai'
 defaultContentLanguage = 'zh-cn'
-title = 'bigfa'
 theme = 'farallon'
 
 [langusges]
@@ -19,8 +18,8 @@ theme = 'farallon'
     name="Movies"
     url="/en/movies/"
     weight="1"
-    [[languages.zh-cn.menu.main]]
-    name="Categories"
+    [[languages.en.menu.main]]
+    name="Categories分类"
     url="/categories/"
     weight="1"
     [[languages.en.menu.main]]
@@ -59,20 +58,6 @@ theme = 'farallon'
   search=false
   description = 'A simple and fast blog framework written in Go.'
   toc = true
-
-[menu]
-  [[menu.main]]
-  name="Gears"
-  url="/gears/"
-  weight="1"
-  [[menu.main]]
-  name="书影音"
-  url="/movies/"
-  weight="1"
-  [[menu.main]]
-  name="关于"
-  url="/about/"
-  weight="1"
 
 [outputs]
   home = [ "HTML","JSON","RSS","SITEMAP"]
