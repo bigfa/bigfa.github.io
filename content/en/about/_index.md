@@ -1,45 +1,47 @@
 ---
-title: "我是谁"
+title: "Who am I"
 layout: "page"
 wikipedia: "https://en.wikipedia.org/wiki/Bruce_Willis"
 ---
 
-但凡写博客的人都有一个简单的介绍页面，可能叫关于，也可能叫 about，说实话我挺不喜欢这个词的，给人一种特别呆的感觉，而且貌似从写博客以来，我并没有介绍过自己，最多就是写一下自己的联系方式罢了。在社交网络上，绝大多数人们都会只展示自己好的一面，甚至夸大自己，也有很多人不愿意在网络上过多的透漏自己的信息，我也属于这种人，其实更多的是我从来没有好好的总结过自己。曾经的我很喜欢在微博，微信上唠叨，也很热衷于 instagram（手机瞎拍），几天前我把自己的 instagram 也清空了，现在的我可谓是一身轻松。
+Most bloggers have a simple introduction page, which is usually called “关于” in Chinese or “about” in English. To be honest, I don’t really like this word as it gives a dull impression. Moreover, since I started blogging, I haven’t really introduced myself, at most just mentioning my contact information. On social networks, most people only showcase their best side and even exaggerate their qualities. Many people are also reluctant to reveal too much about themselves online, and I belong to that category. Actually, the main reason is that I have never really summarized myself properly.
 
-### 我是谁
+I used to love ranting on Weibo, WeChat, and I was also keen on Instagram (randomly taking photos with my phone). But a few days ago, I cleared out my Instagram and now I feel much lighter.
 
-INFP。
+### Who am I?
 
-80/90 混合体，不爱戴眼镜的近视眼。毕业于 HIT。
+INFP.
 
-有一些程序员的特征，但从不认为自己是一名程序员也不想当一名程序员，理想的职业是做一名大学教师。
+A mix of the 80s and 90s generation, a nearsighted person who doesn’t wear glasses. Graduated from HIT.
 
-虽然为东北人，但却缺少东北人的特征。自以为最大的优点就是真诚待人，虽然被坑了无数次，永远相信这个世界上好人多于坏人，很天真但是不傻，不会给人第二次欺骗自己的机会。
+I have some characteristics of a programmer, but I don’t consider myself one, nor do I aspire to be one. My ideal profession is to be a university teacher.
 
-此人样貌底子极差，在很长一段时间内因为其他光环过于耀眼，这个问题一直处于忽略状态，直到有一天接触了“知乎看脸论”，意识到这是一个极其严重的问题，然后开始注重自己的形象，也因此积累了丰富的时装和化妆品知识。
+Although I am from Northeast China, I lack the typical traits of a Northeasterner. I believe my biggest virtue is being sincere with others, even though I have been taken advantage of countless times. I always believe that there are more good people than bad people in this world. I may be naive, but not foolish. I won’t give anyone a second chance to deceive me.
 
-### 我的技能
+I have very poor looks, but for a long time, I ignored this problem because other aspects of my life were too bright. It was not until I came across the “Zhihu’s Face Theory” that I realized it was a serious problem. Since then, I have started paying attention to my appearance and have accumulated a wealth of knowledge about fashion and cosmetics.
 
-在简历中展示的技能目的是为了告诉 HR 自己能做什么，而这里展示技能更多的是为了装逼，因为我的大部分技能都不会在工作中派上用场。
+### My skills
 
-对于香水、护肤品有所涉猎，但是对化妆一窍不通
+In a resume, showing skills is to let employers know what you can do, but here, showing skills is more about showing off, because most of my skills are not really applicable in a job context.
 
-精通一些西餐的做法，但缺少礼仪知识。中餐处于可以做的状态，但是不喜欢。
+I have some knowledge about perfumes and skincare products, but I know nothing about makeup.
 
-一定的前端技能包括但不限于 html,css,js
+I am adept in Western cuisine recipes, but I lack knowledge of etiquette. I am capable of cooking Chinese cuisine, but I don’t enjoy it.
 
-一定的后端技能包括但不限于 php,shell
+I have certain front-end skills including, but not limited to, HTML, CSS, and JavaScript.
 
-自学过法学和心理学，法学在努力备考状态，心理学已放弃。
+I have certain back-end skills including, but not limited to, PHP and shell scripting.
 
-健身理论派高手。
+I have self-studied law and psychology. While I am diligently preparing for the law exams, I have given up on psychology.
 
-有一定的德州扑克经验，因为穷的原因，实战不是很多。
+I am a theoretical expert in fitness.
 
-### 这网站内容是关于啥的
+I have some experience playing Texas Hold’em but due to financial reasons, I haven’t played much.
 
-这网站是我新开的博客，写什么还没有想好，甚至不知道会不会坚持下去，但是可以确定的是，我会写关于美食、护肤、淘宝、医学等所有我擅长的东西，只是我不确定我会在哪里写，如果这个博客能一直活下去，这些内容必然会出现在这个网站上。我自己深知涉猎如此广泛很难做到精通，然而作为一个个人博客，我也不想把这个网站做的多么的伟大牛逼，然而如果这个网站变得很牛逼，我是不会拒绝的。
+### What is this website about?
 
-在很长一段时间内这个网站不会做友情链接，不会投放广告。突然想，别人的自我介绍也就是一个页面，而我想把这个网站作为自己的个人介绍。
+This website is my newly opened blog. I haven’t decided what to write yet, and I don’t even know if I will continue. However, one thing I can be certain of is that I will write about everything I am good at, such as food, skincare, online shopping, medicine, and so on. I’m just not sure where I will write them. If this blog can survive, these topics will definitely appear on this website. I am aware that it’s difficult to excel in such a wide range of fields, but as a personal blog, I don’t want to make it too ambitious. However, if this website becomes really amazing, I won’t refuse that either.
 
-So,这个网站就是我的介绍。
+For a long time, this website will not have any link exchanges or advertisements. Suddenly, I thought that other people’s self-introductions are just one page, but I want to turn this website into my personal introduction.
+
+So, this website is my introduction.

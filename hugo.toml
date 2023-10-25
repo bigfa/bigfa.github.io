@@ -13,15 +13,15 @@ theme = 'farallon'
   [languages.en.menu]
     [[languages.en.menu.main]]
     name="Gears"
-    url="/gears/"
+    url="/en/gears/"
     weight="2"
     [[languages.en.menu.main]]
     name="Movies"
-    url="/movies/"
+    url="/en/movies/"
     weight="1"
     [[languages.en.menu.main]]
     name="About"
-    url="/about/"
+    url="/en/about/"
     weight="3"
 
 [languages.zh-cn]
