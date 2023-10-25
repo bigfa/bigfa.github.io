@@ -3,7 +3,7 @@ languageCode = 'zh-cn'
 timezone = 'Asia/Shanghai'
 defaultContentLanguage = 'zh-cn'
 title = 'bigfa'
-theme = 'farallon'
+theme = 'notability'
 
 [langusges]
 [languages.en]

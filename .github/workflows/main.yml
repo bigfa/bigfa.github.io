@@ -34,7 +34,7 @@ jobs:
             - name: Deploy Demo
               uses: peaceiris/actions-gh-pages@v3.9.3
               with:
-                  deploy_key: ${{ secrets.PERSONAL_TOKEN }}
+                  personal_token: ${{ secrets.PERSONAL_TOKEN }}
                   external_repository: bigfa/hugo-theme-farallon
                   publish_branch: gh-pages # default: gh-pages
                   publish_dir: ./public
