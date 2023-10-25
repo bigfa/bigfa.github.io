@@ -19,13 +19,17 @@ theme = 'farallon'
     name="Movies"
     url="/en/movies/"
     weight="1"
+    [[languages.zh-cn.menu.main]]
+    name="Categories"
+    url="/categories/"
+    weight="1"
     [[languages.en.menu.main]]
     name="About"
     url="/en/about/"
     weight="3"
 
 [languages.zh-cn]
-  title = "bigfa的博客"
+  title = "bigfa 的博客"
   languageName = "简体中文"
   contentDir = 'content/zh-cn'
   [languages.zh-cn.menu]
@@ -36,6 +40,10 @@ theme = 'farallon'
     [[languages.zh-cn.menu.main]]
     name="书影音"
     url="/movies/"
+    weight="1"
+    [[languages.zh-cn.menu.main]]
+    name="分类"
+    url="/categories/"
     weight="1"
     [[languages.zh-cn.menu.main]]
     name="关于"
@@ -67,5 +75,5 @@ theme = 'farallon'
   weight="1"
 
 [outputs]
-  home = [ "HTML","JSON"]
+  home = [ "HTML","JSON","RSS","SITEMAP"]
   page = ["HTML"]
