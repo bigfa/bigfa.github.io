@@ -1,4 +1,4 @@
 ---
-title: "数字游民"
+title: "Digital Nomad"
 description: "hi"
 ---

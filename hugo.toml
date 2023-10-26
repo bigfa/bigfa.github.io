@@ -20,7 +20,7 @@ theme = 'farallon'
     weight="1"
     [[languages.en.menu.main]]
     name="Categories"
-    url="/categories/"
+    url="/en/categories/"
     weight="1"
     [[languages.en.menu.main]]
     name="About"

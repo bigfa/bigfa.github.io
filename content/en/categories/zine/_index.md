@@ -1,4 +1,4 @@
 ---
-title: "笔记"
+title: "Zine"
 description: "hi"
 ---

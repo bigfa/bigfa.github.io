@@ -1,7 +1,7 @@
 ---
 title: "徕卡 Sofort"
 description:
-categories: ["gears"]
+categories: ["digital"]
 tags: ["Leica"]
 date: 2023-10-26T09:32:23+08:00
 image:
