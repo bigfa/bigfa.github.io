@@ -2,7 +2,7 @@ baseURL = 'https://bigfa.github.io/'
 languageCode = 'zh-cn'
 timezone = 'Asia/Shanghai'
 defaultContentLanguage = 'zh-cn'
-theme = 'farallon'
+theme = 'notability'
 
 [langusges]
 [languages.en]
@@ -21,6 +21,10 @@ theme = 'farallon'
     [[languages.en.menu.main]]
     name="Categories"
     url="/en/categories/"
+    weight="1"
+    [[languages.en.menu.main]]
+    name="Tags"
+    url="/en/tags/"
     weight="1"
     [[languages.en.menu.main]]
     name="About"
@@ -43,6 +47,10 @@ theme = 'farallon'
     [[languages.zh-cn.menu.main]]
     name="分类"
     url="/categories/"
+    weight="1"
+    [[languages.zh-cn.menu.main]]
+    name="标签"
+    url="/tags/"
     weight="1"
     [[languages.zh-cn.menu.main]]
     name="关于"
