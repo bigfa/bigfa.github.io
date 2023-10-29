@@ -7,7 +7,6 @@ date: 2023-10-29T19:07:06+08:00
 image:
 hidden: false
 comments: true
-draft: true
 ---
 
 打卡了深圳柏悦

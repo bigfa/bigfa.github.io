@@ -12,3 +12,11 @@ comments: true
 have a nice try.
 
 ![Park Hyatt ShenZhen](//static.fatesinger.com/2023/10/orn0qzjntebzsevx.jpg)
+
+## Pros
+
+1. Perfact location
+
+## Cons
+
+1. Too expensive
