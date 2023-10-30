@@ -30,6 +30,10 @@ theme = 'farallon'
     name="About"
     url="/en/about/"
     weight="3"
+    [[languages.en.menu.main]]
+    name="Stories"
+    url="/en/story/"
+    weight="1"
 
 [languages.zh-cn]
   title = "bigfa 的博客"
@@ -56,6 +60,12 @@ theme = 'farallon'
     name="关于"
     url="/about/"
     weight="1"
+    [[languages.zh-cn.menu.main]]
+    name="文章"
+    url="/story/"
+    weight="1"
+
+    
 
 [taxonomies]
   category = 'categories'
