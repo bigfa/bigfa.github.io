@@ -4,6 +4,7 @@ timezone = 'Asia/Shanghai'
 defaultContentLanguage = 'zh-cn'
 theme = 'farallon'
 
+
 [langusges]
 [languages.en]
   title = "bigfa's Blog"
@@ -57,10 +58,6 @@ theme = 'farallon'
     url="/tags/"
     weight="1"
     [[languages.zh-cn.menu.main]]
-    name="关于"
-    url="/about/"
-    weight="1"
-    [[languages.zh-cn.menu.main]]
     name="文章"
     url="/story/"
     weight="1"
@@ -76,6 +73,7 @@ theme = 'farallon'
   search=false
   description = 'A simple and fast blog framework written in Go.'
   toc = true
+  mainSections = ['story']
 
 [outputs]
   home = [ "HTML","JSON","RSS","SITEMAP"]

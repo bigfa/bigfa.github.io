@@ -8,6 +8,7 @@ date: 2023-10-30T13:34:50+08:00
 image:
 hidden: false
 comments: true
+cc: "BY-NC"
 ---
 
 ![深圳湾安达仕酒店](//static.fatesinger.com/2023/10/ukfbp8mxu5ziejja.jpg)

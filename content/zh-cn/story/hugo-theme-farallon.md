@@ -7,6 +7,7 @@ date: 2023-10-30T21:07:22+08:00
 image:
 hidden: false
 comments: true
+weight: 1
 ---
 
 ![Hugo 主题 Farallon](https://static.fatesinger.com/2023/06/u1ak8xgmyn9ec24r.png)
@@ -16,6 +17,30 @@ comments: true
 Hugo 当前版本 `0.2.6`，最后更新日期 `2023/10/30`
 
 ## 使用指南
+
+### 站点参数设置
+
+以下参数都在`[Params]`下
+
+#### description
+
+-   类型: 字符串
+
+站点描述
+
+#### mainSections
+
+-   类型：数组
+-   默认值：`['story']`
+
+### 多语言设置
+
+设置配置文件中`DefaultContentLanguage`参数来选择语音，默认是`en`，翻译文件在`i18n` 目录下，支持以下类型，
+
+-   `en` 英文
+-   `zh-cn` 简体中文
+
+例如想试用简体中文，则设置`DefaultContentLanguage`为`zh-cn`
 
 ### 卡片分类页面使用方法
 
@@ -28,6 +53,8 @@ description: "旅行体验"
 layout: travel
 ---
 ```
+
+## 国内用户特别设置
 
 注意`travel` 是分类 slug，在重新设置 title 就可以外显单独的分类名了。
 
