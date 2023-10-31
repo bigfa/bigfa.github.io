@@ -1,4 +1,4 @@
 ---
-title: "Digital Nomad"
+title: "Hotels"
 description: "hi"
 ---

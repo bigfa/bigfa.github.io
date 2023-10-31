@@ -11,7 +11,7 @@ comments: true
 
 ![Hugo 主题 Farallon](https://static.fatesinger.com/2023/06/u1ak8xgmyn9ec24r.png)
 
-本主题使用古法制作，不依赖三方框架。
+> 本主题使用古法制作，不依赖三方框架。
 
 Hugo 当前版本 `0.2.6`，最后更新日期 `2023/10/30`
 
