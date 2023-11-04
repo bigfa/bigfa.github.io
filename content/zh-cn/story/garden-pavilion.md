@@ -1,10 +1,10 @@
 ---
 title: "榕阁 Garden Pavilion"
-description:
+description: "榕阁 20 年和 21 年是上过黑珍珠的，绝大多数能上大众点评黑珍珠的餐厅都不会踩雷，如今榕阁已经不在黑珍珠榜上了，这样的出品不在榜上也是应该的了，只不过出品水平降了，价格却没降，真的不推荐了。"
 categories: ["hotels"]
 tags: ["hyatt"]
 date: 2023-11-04T21:48:31+08:00
-image:
+cover: "https://static.fatesinger.com/2023/11/cyuaahpcuea87gfi.jpg"
 hidden: false
 comments: true
 ---
