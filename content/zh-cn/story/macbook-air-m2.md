@@ -1,7 +1,7 @@
 ---
 title: "Macbook Air M2 2022"
 description: "双十一下单了新电脑，当时也在电报频道里更新了，现在收货差不多有一周了，来写个文章。"
-cover: "//static.fatesinger.com/2023/11/irjc1fvtxz6at8l9.jpg"
+cover: "https://static.fatesinger.com/2023/11/irjc1fvtxz6at8l9.jpg"
 categories: ["gears"]
 tags: ["apple"]
 date: 2023-11-06T17:53:54+08:00
