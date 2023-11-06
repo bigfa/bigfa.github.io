@@ -16,6 +16,8 @@ weight: 1
 
 Hugo 当前版本 `0.2.6`，最后更新日期 `2023/10/30`
 
+[演示地址](https://bigfa.github.io/hugo-theme-farallon/)
+
 ## 使用指南
 
 ### 站点参数设置
@@ -115,3 +117,11 @@ token: "2bfb9a8d037a7352c9d369b85d33ac83e39a"
 ---
 
 ```
+
+### 豆瓣条目
+
+直接插入链接单独一行即可
+
+`https://movie.douban.com/subject/35451890/`
+
+https://movie.douban.com/subject/35451890/
