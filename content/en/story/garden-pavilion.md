@@ -9,11 +9,11 @@ hidden: false
 comments: true
 ---
 
-![榕阁](//static.fatesinger.com/2023/11/cyuaahpcuea87gfi.jpg)
+![Garden Pavilion](//static.fatesinger.com/2023/11/cyuaahpcuea87gfi.jpg)
 
 Over the weekend, I had a meal at Garden Pavilion, located at the Park Hyatt hotel. Prior to this visit, I was hesitant due to the high average cost per person mentioned on Dianping, ranging from seven to eight hundred yuan. However, since we were staying at the hotel, we decided to give it a try. In all honesty, the overall experience was underwhelming. The atmosphere was pleasant, but the dishes were quite mediocre, and the prices were steep. I would say it was not worth the expense.
 
-![餐厅装饰](//static.fatesinger.com/2023/11/1g0qa9yff44npf7u.jpg)
+![](//static.fatesinger.com/2023/11/1g0qa9yff44npf7u.jpg)
 
 In Shenzhen, the Park Hyatt hotel features an impressive atrium with the restaurant Garden Pavilion located on the same floor. It is easily accessible via an elevator that goes directly to the lobby. If you want to go to the guest rooms, you would need to transfer to another elevator. This restaurant has a unique and distinctive ambiance, as it is situated within the building and even features trees growing inside.
 ![](//static.fatesinger.com/2023/11/klt01o49s30vcg9b.jpg)
