@@ -25,3 +25,35 @@ article:
 
     readingTime:
         other: "reading Time: {{ .Count }} min"
+
+timeFormat:
+    second:
+        other: sec
+    seconds:
+        other: secs
+    minite:
+        other: min
+    minites:
+        ohter: mins
+    hour:
+        other: hour
+    hours:
+        other: hours
+    days:
+        other: days
+    day:
+        other: day
+    week:
+        other: week
+    weeks:
+        other: week
+    month:
+        other: month
+    months:
+        other: months
+    year:
+        other: year
+    years:
+        other: years
+    ago:
+        other: ago
