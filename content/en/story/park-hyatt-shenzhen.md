@@ -1,10 +1,10 @@
 ---
 title: "Park Hyatt ShenZhen"
-description:
+description: " Last Saturday, I stayed at Park Hyatt Shenzhen. I opted for a cash stay this time, and the price of 2100 RMB on a Saturday was considered reasonable, considering that hotel prices in Shenzhen tend to be higher on weekends."
 categories: ["hotels"]
 tags: ["Hyatt", "Park Hyatt"]
 date: 2023-10-29T19:07:06+08:00
-image:
+cover: "https://static.fatesinger.com/2023/11/lfvsapye5xvq2m9o.jpg"
 hidden: false
 comments: true
 ---

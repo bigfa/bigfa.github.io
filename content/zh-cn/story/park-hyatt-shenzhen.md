@@ -1,11 +1,10 @@
 ---
 title: "深圳柏悦酒店"
-description:
+description: "周六了住了下深圳柏悦，本次环球客现金入住，周六 2100 在最近算是不错的价格，毕竟深圳的酒店周末价格都会高一些。"
 cover: "https://static.fatesinger.com/2023/11/lfvsapye5xvq2m9o.jpg"
 categories: ["hotels"]
 tags: ["Hyatt", "Park Hyatt"]
 date: 2023-10-29T19:07:06+08:00
-image:
 hidden: false
 comments: true
 ---
