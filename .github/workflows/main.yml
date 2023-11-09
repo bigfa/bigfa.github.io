@@ -19,10 +19,6 @@ jobs:
               with:
                   hugo-version: latest
                   extended: true
-            - name: Setup Node
-            - uses: actions/setup-node@v3
-              with:
-                  node-version: 18
 
             - name: Build
               run: hugo --gc --minify --cleanDestinationDir
