@@ -26,12 +26,9 @@ jobs:
 
             - name: Build
               run: hugo --gc --minify --cleanDestinationDir
-            - name: create env file
-              run: |
-                  touch .env
-                  echo ENGINE_APALGOLIA_WRITE_KEYI_KEY=${{ secrets.ALGOLIA_WRITE_KEY }} >> .env
 
-            - uses: caibingcheng/hugo-algolia2@v1
+            - name: Search
+              uses: caibingcheng/hugo-algolia2@v1
               with:
                   input: "content/zh-cn/story/**"
                   index: "bigfa"
