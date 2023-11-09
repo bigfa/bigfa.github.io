@@ -19,9 +19,24 @@ jobs:
               with:
                   hugo-version: latest
                   extended: true
+            - name: Setup Node
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: 18
 
             - name: Build
               run: hugo --gc --minify --cleanDestinationDir
+            - name: create env file
+              run: |
+                  touch .env
+                  echo ENGINE_APALGOLIA_WRITE_KEYI_KEY=${{ secrets.ALGOLIA_WRITE_KEY }} >> .env
+
+            - uses: caibingcheng/hugo-algolia2@v1
+              with:
+                  input: "content/zh-cn/story/**"
+                  index: "bigfa"
+                  apikey: ${{ secrets.ALGOLIA_WRITE_KEY }}
+                  appid: "FX1CAS2SD8"
 
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3

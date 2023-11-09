@@ -70,11 +70,15 @@ theme = 'farallon'
   series = 'series'
 
 [Params]
-  search=false
+  search= true
   description = 'A simple and fast blog framework written in Go.'
   toc = true
   mainSections = ['story']
+  indexName = 'bigfa'
+  searchKey = 'b0825b184f45c084e31770fbcc9261f2'
+  searchAPPID = 'FX1CAS2SD8'
 
 [outputs]
   home = [ "HTML","JSON","RSS","SITEMAP"]
   page = ["HTML"]
+
