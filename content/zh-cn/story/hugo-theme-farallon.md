@@ -14,7 +14,7 @@ weight: 1
 
 > 本主题使用古法制作，不依赖三方框架。
 
-Hugo 当前版本 `0.2.6`，最后更新日期 `2023/10/30`
+Hugo 当前版本 `0.3.1`，最后更新日期 `2023/11/10`
 
 [演示地址](https://bigfa.github.io/hugo-theme-farallon/)
 
@@ -56,9 +56,49 @@ layout: travel
 ---
 ```
 
-## 国内用户特别设置
+### 搜索
 
-注意`travel` 是分类 slug，在重新设置 title 就可以外显单独的分类名了。
+推荐使用`algolia`，个人小站免费额度够用了。
+
+站点配置参数，设置成你自己的，主要不要暴露`adminKey`
+
+```
+[Params]
+  search= true
+  indexName = 'bigfa'
+  searchKey = 'b0825b184f45c084e31770fbcc9261f2'
+  searchAPPID = 'FX1CAS2SD8'
+```
+
+自动提交编辑`.github/workflow/main.yaml`
+
+```
+- name: Search
+    uses: caibingcheng/hugo-algolia2@v1
+    with:
+        input: "content/zh-cn/story/**"
+        index: "bigfa"
+        apikey: ${{ secrets.ALGOLIA_WRITE_KEY }}
+        appid: "FX1CAS2SD8"
+```
+
+新建一个项目 token，`ALGOLIA_WRITE_KEY`，值为`adminKey`
+
+主要这里的 index 和你在`algolia` 中创建的保持一致。
+
+### 内链卡片
+
+短代码
+
+```
+~{~{<link "garden-pavilion">~}~}
+```
+
+自行取掉多余字符
+
+{{<link "garden-pavilion">}}
+
+## 国内用户特别设置
 
 ### 物品列表使用方法
 
