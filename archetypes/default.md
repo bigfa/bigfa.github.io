@@ -3,9 +3,8 @@ title: "{{ replace .Name " - " " " | title }}"
 description: 
 categories: ["zine"]
 tags: ["mini"]
-series: ["apple"]
 date: {{ .Date }}
-image: 
+cover: 
 hidden: false
 comments: true
 draft: true
