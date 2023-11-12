@@ -76,6 +76,10 @@ theme = 'farallon'
   indexName = 'bigfa'
   searchKey = 'b0825b184f45c084e31770fbcc9261f2'
   searchAPPID = 'FX1CAS2SD8'
+  showAuthor = true
+  authorName = 'bigfa'
+  authorDescription = 'computer loser'
+  authorAvatar = 'https://secure.gravatar.com/avatar/2fd7e2e17a671f8e3fade0706e0a667e?s=128&d=mm&r=g'
 
 [outputs]
   home = [ "HTML","JSON","RSS","SITEMAP"]

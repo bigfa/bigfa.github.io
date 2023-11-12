@@ -56,6 +56,18 @@ layout: travel
 ---
 ```
 
+### 作者信息
+
+站点配置参数
+
+```
+[Params]
+  showAuthor = true
+  authorName = 'bigfa'
+  authorDescription = 'computer loser'
+  authorAvatar = 'https://secure.gravatar.com/avatar/2fd7e2e17a671f8e3fade0706e0a667e?s=128&d=mm&r=g'
+```
+
 ### 搜索
 
 推荐使用`algolia`，个人小站免费额度够用了。
