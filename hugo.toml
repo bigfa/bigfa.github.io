@@ -67,7 +67,6 @@ theme = 'farallon'
 [taxonomies]
   category = 'categories'
   tag = 'tags'
-  series = 'series'
 
 [Params]
   search= true
