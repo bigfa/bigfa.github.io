@@ -44,6 +44,23 @@ Hugo 当前版本 `0.3.1`，最后更新日期 `2023/11/10`
 
 例如想试用简体中文，则设置`DefaultContentLanguage`为`zh-cn`
 
+### 状态文章格式
+
+`content` 目录下创建一个`memo`文件夹，里面就是正常的文章 md 文件
+
+```
+hugo new content memo/1.md
+```
+
+站点参数配置
+
+```
+[Params]
+  mainSections = ['story','memo']
+```
+
+如果你想用其他别名也可以，`memo`换为你想用的就可以了。
+
 ### 卡片分类页面使用方法
 
 在`content`目录下新建你想要使用模版的页面，比如你的分类是`travel`，则新建`categories/travel/_index.md`,然后编辑文件，设置`layout`为`travel` 即可

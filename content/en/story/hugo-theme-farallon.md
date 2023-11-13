@@ -46,6 +46,23 @@ In order to use a language, set `DefaultContentLanguage` to the language code in
 
 For example, if you want to use English, set `DefaultContentLanguage` to en.
 
+### Post Structure Format
+
+Create a `memo` folder inside the `content` directory, where the normal Markdown (.md) article files will be placed:
+
+```
+hugo new content/memo/1.md
+```
+
+Site Parameters Configuration
+
+```
+[Params]
+  mainSections = ['story','memo']
+```
+
+If you want to use a different alias, you can do so by replacing `memo` with the alias of your choice.
+
 ### Card list category archive template
 
 To use a template for your desired page, such as for the `travel` category, follow these steps:
