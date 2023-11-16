@@ -8,6 +8,7 @@ image:
 hidden: false
 comments: true
 weight: 1
+story_id: 101971
 ---
 
 ![Hugo 主题 Farallon](https://static.fatesinger.com/2023/06/u1ak8xgmyn9ec24r.png)
