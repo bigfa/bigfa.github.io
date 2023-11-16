@@ -80,6 +80,7 @@ theme = 'farallon'
   authorName = 'bigfa'
   authorDescription = 'computer loser'
   authorAvatar = 'https://secure.gravatar.com/avatar/2fd7e2e17a671f8e3fade0706e0a667e?s=128&d=mm&r=g'
+  commentDomain = 'https://fatesinger.com/__api/v1'
 
 [outputs]
   home = [ "HTML","JSON","RSS","SITEMAP"]

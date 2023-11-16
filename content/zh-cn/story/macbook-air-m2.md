@@ -8,6 +8,7 @@ date: 2023-11-06T17:53:54+08:00
 image:
 hidden: false
 comments: true
+story_id: 102558
 ---
 
 ![Macbook Air M2 2022](//static.fatesinger.com/2023/11/irjc1fvtxz6at8l9.jpg)
