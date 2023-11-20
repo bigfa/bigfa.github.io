@@ -16,7 +16,9 @@ weight: 1
 
 Current version `0.2.6`，last update `2023/10/30`
 
-[演示地址](https://bigfa.github.io/hugo-theme-farallon/)
+[Demo](https://bigfa.github.io/hugo-theme-farallon/)
+
+[Github](https://github.com/bigfa/hugo-theme-farallon)
 
 ## User Guide
 

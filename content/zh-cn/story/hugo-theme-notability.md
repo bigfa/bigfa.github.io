@@ -1,10 +1,10 @@
 ---
 title: "Hugo 主题 Notability"
-description:
+description: "Hugo 主题 Notability"
 categories: ["zine"]
 tags: ["hugo"]
 date: 2023-10-30T22:27:17+08:00
-image:
+cover: "https://static.fatesinger.com/2023/09/czukqwphyybsxjhx.jpg"
 hidden: false
 comments: true
 ---
@@ -18,6 +18,10 @@ comments: true
 ![文章页截图](//static.fatesinger.com/2023/09/qxp926wvd8nve195.jpg)
 
 > 本主题使用古法制作，不依赖三方框架。
+
+[演示地址](https://bigfa.github.io/hugo-theme-notability/)
+
+[项目地址](https://github.com/bigfa/hugo-theme-notability)
 
 ## 使用指南
 
