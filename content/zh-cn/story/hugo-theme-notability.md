@@ -7,6 +7,7 @@ date: 2023-10-30T22:27:17+08:00
 cover: "https://static.fatesinger.com/2023/09/czukqwphyybsxjhx.jpg"
 hidden: false
 comments: true
+story_id: 74850
 ---
 
 抽时间复活了一下这个远古主题，十分简洁。

@@ -2,7 +2,7 @@ baseURL = 'https://bigfa.github.io/'
 languageCode = 'zh-cn'
 timezone = 'Asia/Shanghai'
 defaultContentLanguage = 'zh-cn'
-theme = 'farallon'
+theme = 'notability'
 
 
 [langusges]
