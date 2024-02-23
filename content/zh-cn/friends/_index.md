@@ -13,6 +13,7 @@ links:
             "title": "Fatesinger",
             "link": "https://fatesinger.com",
             "description": "about me",
+            "cover": "https://static.fatesinger.com/2021/03/npbmdu72xozbul3w.jpg!/both/200x200",
         },
     ]
 ---
