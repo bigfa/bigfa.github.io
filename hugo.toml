@@ -7,7 +7,7 @@ theme = 'farallon'
 
 [langusges]
 [languages.en]
-  title = "bigfa's Blog"
+  title = "Untitled"
   languageName = "English"
   contentDir = 'content/en'
   [languages.en.menu]
@@ -37,7 +37,7 @@ theme = 'farallon'
     weight="1"
 
 [languages.zh-cn]
-  title = "bigfa 的博客"
+  title = "Untitled"
   languageName = "简体中文"
   contentDir = 'content/zh-cn'
   [languages.zh-cn.menu]
