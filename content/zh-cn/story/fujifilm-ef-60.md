@@ -4,7 +4,7 @@ description:
 categories: ["gears"]
 tags: ["fujifilm"]
 date: 2023-11-11T15:07:26+08:00
-image:
+cover: "https://static.fatesinger.com/2024/01/p6krrw3jrw3hu7nd.jpeg"
 hidden: false
 comments: true
 ---
