@@ -86,3 +86,7 @@ theme = 'farallon'
   home = [ "HTML","JSON","RSS","SITEMAP"]
   page = ["HTML"]
 
+
+[markup.tableOfContents]
+    endLevel = 5
+    startLevel = 3
