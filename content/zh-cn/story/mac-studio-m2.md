@@ -4,7 +4,7 @@ description:
 categories: ["gears"]
 tags: ["apple"]
 date: 2023-11-10T15:26:33+08:00
-cover:
+cover: "https://static.fatesinger.com/2024/01/j1n89q9ehu0ci87i.jpeg"
 hidden: false
 comments: true
 ---

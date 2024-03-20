@@ -5,7 +5,7 @@ categories: ["zine"]
 tags: ["mini"]
 series: ["apple"]
 date: 2023-11-09T18:57:34+08:00
-image:
+cover: "https://static.fatesinger.com/2024/01/uu0q8uox5yfatloc.jpeg"
 hidden: false
 comments: true
 ---
