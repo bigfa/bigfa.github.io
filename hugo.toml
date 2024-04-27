@@ -62,8 +62,6 @@ theme = 'farallon'
     url="/story/"
     weight="1"
 
-    
-
 [taxonomies]
   category = 'categories'
   tag = 'tags'
@@ -81,6 +79,10 @@ theme = 'farallon'
   authorDescription = 'computer loser'
   authorAvatar = 'https://secure.gravatar.com/avatar/2fd7e2e17a671f8e3fade0706e0a667e?s=128&d=mm&r=g'
   commentDomain = 'https://fatesinger.com/__api/v1'
+  telegram = 'https://t.me/s/fatesinger'
+  feed = '/index.xml'
+  twitter = 'https://twitter.com/fatesinger'
+  instagram = 'https://www.instagram.com/fatesinger/'
 
 [outputs]
   home = [ "HTML","JSON","RSS","SITEMAP"]
