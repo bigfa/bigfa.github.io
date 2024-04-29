@@ -83,6 +83,7 @@ theme = 'farallon'
   feed = '/index.xml'
   twitter = 'https://twitter.com/fatesinger'
   instagram = 'https://www.instagram.com/fatesinger/'
+  github = 'https://github.com/bigfa'
 
 [outputs]
   home = [ "HTML","JSON","RSS","SITEMAP"]
