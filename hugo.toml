@@ -84,6 +84,7 @@ theme = 'farallon'
   twitter = 'https://twitter.com/fatesinger'
   instagram = 'https://www.instagram.com/fatesinger/'
   github = 'https://github.com/bigfa'
+  footer_sns = true
 
 [outputs]
   home = [ "HTML","JSON","RSS","SITEMAP"]
