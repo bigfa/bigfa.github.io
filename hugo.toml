@@ -86,6 +86,7 @@ theme = 'farallon'
   github = 'https://github.com/bigfa'
   footer_sns = true
   post_like = true
+  post_view = true
   actionDomain = 'https://v.wpista.com/'
 
 [outputs]
