@@ -66,29 +66,6 @@ theme = 'farallon'
   category = 'categories'
   tag = 'tags'
 
-[Params]
-  search= true
-  description = 'A simple and fast blog framework written in Go.'
-  toc = true
-  mainSections = ['story','memo']
-  indexName = 'bigfa'
-  searchKey = 'b0825b184f45c084e31770fbcc9261f2'
-  searchAPPID = 'FX1CAS2SD8'
-  showAuthor = true
-  authorName = 'bigfa'
-  authorDescription = 'computer loser'
-  authorAvatar = 'https://secure.gravatar.com/avatar/2fd7e2e17a671f8e3fade0706e0a667e?s=128&d=mm&r=g'
-  commentDomain = 'https://fatesinger.com/__api/v1'
-  telegram = 'https://t.me/s/fatesinger'
-  feed = '/index.xml'
-  twitter = 'https://twitter.com/fatesinger'
-  instagram = 'https://www.instagram.com/fatesinger/'
-  github = 'https://github.com/bigfa'
-  footer_sns = true
-  post_like = true
-  post_view = true
-  actionDomain = 'https://v.wpista.com/'
-
 [outputs]
   home = [ "HTML","JSON","RSS","SITEMAP"]
   page = ["HTML"]
