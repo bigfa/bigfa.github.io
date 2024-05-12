@@ -4,6 +4,3 @@
 [submodule "themes/notability"]
 	path = themes/notability
 	url = https://github.com/bigfa/hugo-theme-notability.git
-[submodule "themes/puppy"]
-	path = themes/puppy
-	url = https://github.com/bigfa/hugo-theme-puppy.git
