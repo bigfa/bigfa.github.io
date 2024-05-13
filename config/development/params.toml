@@ -18,4 +18,4 @@ github = 'https://github.com/bigfa'
 footer_sns = true
 post_like = true
 post_view = true
-actionDomain = 'http://localhost:58188/'
+actionDomain = 'http://localhost:8787/'
