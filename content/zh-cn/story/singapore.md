@@ -1,7 +1,7 @@
 ---
 title: "Singapore City Walk"
 description:
-categories: ["zine"]
+categories: ["travel"]
 tags: ["Singapore"]
 date: 2024-04-15T19:03:47+08:00
 cover: "https://static.fatesinger.com/2024/04/2d0hq8czqqdenilh.jpg"

@@ -1,7 +1,7 @@
 ---
 title: "胡志明市 City Walk"
 description:
-categories: ["zine"]
+categories: ["travel"]
 tags: ["Vietnam"]
 date: 2024-04-12T17:19:21+08:00
 cover: "https://static.fatesinger.com/2024/04/dnh4k16zzcxiu6jy.jpg"

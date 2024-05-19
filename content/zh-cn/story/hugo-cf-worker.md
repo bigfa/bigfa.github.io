@@ -1,8 +1,8 @@
 ---
 title: "Hugo 使用 Cloudflare Worker 实现文章浏览计数与点赞"
 description: "Hugo 使用 Cloudflare Worker 实现文章浏览计数与点赞"
-categories: ["zine"]
-tags: ["mini"]
+categories: ["hugo"]
+tags: []
 date: 2024-05-13T15:31:20+08:00
 cover:
 hidden: false

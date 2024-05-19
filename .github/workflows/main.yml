@@ -21,7 +21,7 @@ jobs:
                   extended: true
 
             - name: Build
-              run: hugo --gc --minify --cleanDestinationDir
+              run: hugo --gc --minify --cleanDestinationDir --ignoreCache
 
             - name: Search
               uses: caibingcheng/hugo-algolia2@v1
@@ -40,7 +40,7 @@ jobs:
                   commit_message: ${{ github.event.head_commit.message }}
 
             - name: Build FARALLON DEMO
-              run: hugo --gc --minify --cleanDestinationDir -b https://bigfa.github.io/hugo-theme-farallon/ -t farallon
+              run: hugo --gc --minify  --ignoreCache --cleanDestinationDir -b https://bigfa.github.io/hugo-theme-farallon/ -t farallon
 
             - name: Deploy Demo
               uses: peaceiris/actions-gh-pages@v3.9.3
@@ -52,7 +52,7 @@ jobs:
                   commit_message: ${{ github.event.head_commit.message }}
 
             - name: Build notability demo
-              run: hugo --gc --minify --cleanDestinationDir -b https://bigfa.github.io/hugo-theme-notability/ -t notability
+              run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://bigfa.github.io/hugo-theme-notability/ -t notability
 
             - name: Deploy notability Demo
               uses: peaceiris/actions-gh-pages@v3.9.3

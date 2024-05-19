@@ -1,8 +1,8 @@
 ---
 title: "Hugo 主题 Notability"
 description: "Hugo 主题 Notability"
-categories: ["zine"]
-tags: ["hugo"]
+categories: ["hugo"]
+tags: []
 date: 2023-10-30T22:27:17+08:00
 cover: "https://static.fatesinger.com/2023/09/czukqwphyybsxjhx.jpg"
 hidden: false
