@@ -28,3 +28,5 @@ https://music.douban.com/subject/36766055/
 图书
 
 https://book.douban.com/subject/36593622/
+
+自动同步使用了 Cloudflare 的 cron 触发器，实测还是比较好用的。
