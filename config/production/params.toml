@@ -19,3 +19,4 @@ footer_sns = true
 post_like = true
 post_view = true
 actionDomain = 'https://v.wpista.com/'
+dbAPIBase = 'https://dbapi.wpista.com/'
