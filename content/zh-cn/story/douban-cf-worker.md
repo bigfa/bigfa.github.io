@@ -52,6 +52,7 @@ R2DOMAIN = "https://db.wpista.com" // R2 绑定域名
 WOKRERDOMAIN = "https://dbapi.wpista.com" // worker 绑定域名
 PAGESIZE = 40 // 每页显示数量
 TYPES = "movie,book,music,game,drama" //初始化数据类型，支持五种，根据你的需要自行设置
+STATUSES = "done,mark,doing" // 状态类型
 TOKEN = "richiscool" // 初始化密钥，为了避免有人恶意调用同步接口，增加了一个token 验证
 
 [[r2_buckets]]
@@ -111,6 +112,7 @@ DOUBAN_ID=54529369 // 你的豆瓣ID
 TYPES=movie,music,book,game,drama //初始化数据类型，支持五种，根据你的需要自行设置
 WORKER_URL=https://dbapi.wpista.com // worker 绑定域名
 TOKEN=richiscool // 初始化密钥，为了避免有人恶意调用同步接口，增加了一个token 验证
+STATUSES = done,mark,doing // 状态类型
 ```
 
 命令
@@ -125,7 +127,7 @@ npm run init
 
 Worker 对外提供了 3 个接口，标记条目列表、单个条目信息、本地化条目封面。
 
--   条目列表`/list`，支持两个参数 `type` 和 `paged`,`type` 为条目类型，`paged` 为页码，`get` 请求。
+-   条目列表`/list`，支持两个参数 `type` 和 `paged`,`type` 为条目类型，`status` 为状态类型，`paged` 为页码，`get` 请求。
 -   单个条目为`/:type/:id`,`type` 为类型，`id` 为条目 `id`。
 -   本地化封面接口无序主动调用，在调用上面两个接口时会根据具体情况自动调用。
 
