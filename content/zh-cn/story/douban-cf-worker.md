@@ -11,6 +11,8 @@ comments: true
 
 > 本功能直接解决豆瓣书影音记录两大痛点，自动同步和封面本地化，对于普通用户来说，Cloudflare 的免费版足够了，非常推荐使用。
 
+[项目地址](https://github.com/bigfa/douban-cf-worker)
+
 之前我自己用 nodejs + mysql 写了一个同步豆瓣书影音的服务，但只在一个很隐蔽的地方公开了，主要是流量和数据库压力太大，提供公共服务成本实在是太高，最近在研究 Cloudflare Worker，试着把服务迁移过去，过程中发现几个问题。
 
 -   D1 单次请求操作次数是有限制的，最多一千次，读写都算。
@@ -31,6 +33,8 @@ https://music.douban.com/subject/36766055/
 
 https://book.douban.com/subject/36593622/
 
+为了简化数据库使用单表、所以电影不再支持类型了。新的单条目引用不会在标记列表中展示，后续如果该条目被标记则会自动更新，**取消标记不会被同步**。
+
 自动同步使用了 Cloudflare 的 cron 触发器，实测还是比较好用的。同步时间可以根据自己的需求设置，默认配置是每 30 分钟同步一次。
 
 ```
@@ -41,7 +45,7 @@ crons = ["*/30 * * * *"]
 
 ### 配置文件
 
-`wrangler.toml`
+Worker 配置文件 `wrangler.toml`
 
 ```
 
@@ -105,7 +109,7 @@ npm run deploy
 
 ### 初始化方法
 
-配置文件`config.env`
+初始化配置文件`scripts/config.env`
 
 ```
 DOUBAN_ID=54529369 // 你的豆瓣ID
@@ -133,4 +137,22 @@ Worker 对外提供了 3 个接口，标记条目列表、单个条目信息、�
 
 ### 前端展示
 
-和以前一样，强烈建议使用本人全家桶，如果想自行调用则可以参考主题目录下 `assets/ts/db.ts` 和页面模版文件`layout/section.movies.html` 的文件。或者直接用 worker 接口自行开发。
+和以前一样，强烈建议使用本人全家桶，如果想自行调用则可以参考主题目录下 `assets/ts/db.ts` 和样式`assets/scss/modules/_db.scss` 的文件。或者直接用 worker 接口自行开发。
+
+`db.ts` 已经被我封装成一个类，调用方法。
+
+```
+new Douban({
+    baseAPI: '', // Worker api
+    container: ".db--container", // 容器名
+});
+
+```
+
+现在`html`只需要如下结构
+
+```
+<div class="db--container"></div>
+```
+
+我自己测试了一阵子，使用上没啥大问题，比较稳定，偶尔有一直图片下载失败手动调用下接口重新下载即可。
