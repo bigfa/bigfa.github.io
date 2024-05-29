@@ -1,8 +1,8 @@
 ---
 title: "{{ replace .Name " - " " " | title }}"
 description: 
-categories: ["zine"]
-tags: ["mini"]
+categories: ["hugo"]
+tags: []
 date: {{ .Date }}
 cover: 
 hidden: false
