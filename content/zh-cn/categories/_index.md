@@ -1,4 +1,4 @@
 ---
-title: "Explore topics"
+title: "分类"
 description: "hi"
 ---

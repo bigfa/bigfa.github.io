@@ -1,7 +1,8 @@
 ---
 title: "我是谁"
 layout: "page"
-wikipedia: "https://en.wikipedia.org/wiki/Bruce_Willis"
+date: 2024-01-15T23:22:50+08:00
+layout: "about"
 menu:
     main:
         name: 关于

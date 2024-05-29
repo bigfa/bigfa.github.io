@@ -1,8 +1,7 @@
 ---
-title: "Gears"
+title: "设备"
 subtitle: "my fuji gears"
-date: 2021-03-06T15:39:00-06:00
-draft: false
+layout: "gears"
 faves:
     [
         {

@@ -1,4 +1,4 @@
 ---
-title: "Explore topics"
+title: "Categories"
 description: "hi"
 ---

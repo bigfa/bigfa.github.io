@@ -1,11 +1,12 @@
 ---
-title: "朋友们"
+title: "Friends"
 subtitle: "blogroll"
 layout: "links"
-wikipedia: "https://en.wikipedia.org/wiki/Bruce_Willis"
+url: "/en/friends"
+date: 2024-01-15T23:22:50+08:00
 menu:
     main:
-        name: 链接
+        name: Links
         weight: 10
 links:
     [

@@ -33,7 +33,7 @@ theme = 'farallon'
     weight="3"
     [[languages.en.menu.main]]
     name="Stories"
-    url="/en/story/"
+    url="/en/archive/"
     weight="1"
 
 [languages.zh-cn]
@@ -59,7 +59,7 @@ theme = 'farallon'
     weight="1"
     [[languages.zh-cn.menu.main]]
     name="文章"
-    url="/story/"
+    url="/archive/"
     weight="1"
 
 [taxonomies]
@@ -72,5 +72,15 @@ theme = 'farallon'
 
 
 [markup.tableOfContents]
-    endLevel = 5
-    startLevel = 3
+  endLevel = 5
+  startLevel = 3
+
+[permalinks]
+  [permalinks.section]
+    story = '/archive'
+  [permalinks.page]
+    post = '/story/:filename/'
+    page = '/:filename/'  
+  [permalinks.term]
+    tags = '/tag/:slug/'
+    categories = '/category/:slug/'

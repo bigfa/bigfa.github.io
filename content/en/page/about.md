@@ -1,7 +1,8 @@
 ---
 title: "Who am I"
 layout: "page"
-wikipedia: "https://en.wikipedia.org/wiki/Bruce_Willis"
+date: 2024-01-15T23:22:50+08:00
+layout: "about"
 ---
 
 Most bloggers have a simple introduction page, which is usually called “关于” in Chinese or “about” in English. To be honest, I don’t really like this word as it gives a dull impression. Moreover, since I started blogging, I haven’t really introduced myself, at most just mentioning my contact information. On social networks, most people only showcase their best side and even exaggerate their qualities. Many people are also reluctant to reveal too much about themselves online, and I belong to that category. Actually, the main reason is that I have never really summarized myself properly.
