@@ -77,7 +77,7 @@ theme = 'farallon'
 
 [permalinks]
   [permalinks.section]
-    story = '/archive'
+    post = '/archive'
   [permalinks.page]
     post = '/story/:filename/'
     page = '/:filename/'  
