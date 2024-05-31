@@ -21,11 +21,11 @@ theme = 'farallon'
     weight="1"
     [[languages.en.menu.main]]
     name="Categories"
-    url="/en/categories/"
+    url="/en/cats/"
     weight="1"
     [[languages.en.menu.main]]
     name="Tags"
-    url="/en/tags/"
+    url="/en/topics/"
     weight="1"
     [[languages.en.menu.main]]
     name="About"
@@ -51,11 +51,11 @@ theme = 'farallon'
     weight="1"
     [[languages.zh-cn.menu.main]]
     name="分类"
-    url="/categories/"
+    url="/cats/"
     weight="1"
     [[languages.zh-cn.menu.main]]
     name="标签"
-    url="/tags/"
+    url="/topics/"
     weight="1"
     [[languages.zh-cn.menu.main]]
     name="文章"
@@ -79,8 +79,11 @@ theme = 'farallon'
   [permalinks.section]
     post = '/archive'
   [permalinks.page]
-    post = '/story/:filename/'
-    page = '/:filename/'  
+    post = '/story/:slugorfilename/'
+    page = '/:slugorfilename/'  
   [permalinks.term]
-    tags = '/tag/:slug/'
-    categories = '/category/:slug/'
+    tags = '/tag/:slugorfilename/'
+    categories = '/category/:slugorfilename/'
+  [permalinks.taxonomy]
+    tags = '/topics/'
+    categories = '/cats/'
