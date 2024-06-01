@@ -2,7 +2,7 @@
 title: "Hugo 主题 Farallon"
 description:
 categories: ["hugo"]
-tags: []
+tags: ["hugo"]
 date: 2023-10-30T21:07:22+08:00
 image:
 hidden: false

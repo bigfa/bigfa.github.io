@@ -61,8 +61,8 @@ Hugo 的页面类型主要有以下几个，还有一些特殊的功能性页面
     post = '/story/:slugorfilename/'
     page = '/:slugorfilename/'
   [permalinks.term]
-    tags = '/tag/:slugorfilename/'
-    categories = '/category/:slugorfilename/'
+    tags = '/tag/:slug/'
+    categories = '/category/:slug/'
   [permalinks.taxonomy]
     tags = '/topics/'
     categories = '/cats/'
@@ -71,5 +71,7 @@ Hugo 的页面类型主要有以下几个，还有一些特殊的功能性页面
 这个配置结合文章开头的页面类型来看，就很容易理解了。
 
 带`:`的为 hugo 的常量，全部常量大家可以在官方文档中找到，但常用的应该就是`:section`，`:title`，`:slug`，`:filename`，`:slugorfilename`，这里我推荐大家使用`:slugorfilename`，意思是如果文章单独设置了 `slug` 属性则使用 `slug`，否则使用文件名。如果你在文章中直接设置`url`属性，那么将直接使用`url`属性，这个优先级是最高的。
+
+要注意 term 的设置中谨慎使用 `filename`，如果使用了 `filename` 一定要创建对应的 `markdown` 文件。
 
 Hugo 设置可以为多语言设置不同的 URL 结构，我相信绝大多数人都用不到，这里就不展开说了。

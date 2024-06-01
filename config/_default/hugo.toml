@@ -35,6 +35,18 @@ theme = 'farallon'
     name="Stories"
     url="/en/archive/"
     weight="1"
+  [languages.en.permalinks]
+    [languages.en.permalinks.section]
+      post = '/archive'
+    [languages.en.permalinks.page]
+      post = '/story/:slugorfilename/'
+      page = '/:slugorfilename/'  
+    [languages.en.permalinks.term]
+      tags = '/tag/:slug/'
+      categories = '/category/:slug/'
+    [languages.en.permalinks.taxonomy]
+      tags = '/topics/'
+      categories = '/cats/'
 
 [languages.zh-cn]
   title = "Untitled"
@@ -82,8 +94,8 @@ theme = 'farallon'
     post = '/story/:slugorfilename/'
     page = '/:slugorfilename/'  
   [permalinks.term]
-    tags = '/tag/:slugorfilename/'
-    categories = '/category/:slugorfilename/'
+    tags = '/tag/:slug/'
+    categories = '/category/:slug/'
   [permalinks.taxonomy]
     tags = '/topics/'
     categories = '/cats/'

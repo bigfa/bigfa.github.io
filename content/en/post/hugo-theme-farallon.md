@@ -1,7 +1,7 @@
 ---
 title: "Hugo Theme Farallon"
 description:
-categories: ["zine"]
+categories: ["hugo"]
 tags: ["hugo"]
 date: 2023-10-30T21:07:22+08:00
 image:
