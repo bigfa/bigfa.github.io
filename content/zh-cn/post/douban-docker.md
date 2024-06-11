@@ -7,6 +7,7 @@ date: 2024-06-07T20:27:46+08:00
 cover:
 hidden: false
 comments: true
+story_id: 103483
 ---
 
 前阵子写了一个 Cloudflare Worker 版的同步书影音记录，个人觉得对于个人博客来说已经足够了，但可能一些同学介意 Cloudflare 的网络问题，于是我构建了一个 Docker 镜像，适合有国内服务器的同学使用。
@@ -21,7 +22,7 @@ comments: true
 version: '3'
 services:
   douban-docker:
-    image: douban/latest
+    image: fatesinger/douban:latest
     container_name: douban-docker
     volumes:
       - assets:/app/static
@@ -86,6 +87,21 @@ server {
 docker-compose up -d
 ```
 
+### 不使用 docker 启动服务
+
+根据`.env.example`创建`.env`文件
+
+使用`pm2`
+
+```
+git clone git@github.com:bigfa/douban.git
+cd douban
+npm install
+npm run build
+npm install pm2 -g
+pm2 start dist/index.js --name douban --watch
+```
+
 ### 自动同步
 
 添加定时任务，每半小时同步一次。
@@ -101,6 +117,8 @@ MONGO_URI
 DBID 你的豆瓣 ID
 
 DOMAIN 绑定的域名
+
+API_BASE 接口 base url,建议单独绑定二级域名，如绑定二级目录静态文件需单独处理。
 
 ### 本地开发
 
