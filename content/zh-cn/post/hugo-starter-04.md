@@ -11,7 +11,7 @@ comments: true
 
 本文主要讲解 hugo 的部署方法。
 
-### build 命令详解
+### build 命令
 
 除了基础的 `hugo build` 其实 `build`命令支持不少参数，下面介绍一下比较有用的参数。
 
@@ -125,19 +125,56 @@ jobs:
                   accountId: d0a457cef81f6ea340f9ff6ca6b6ff7a
                   projectName: notability
                   directory: ./public
-                  # Optional: Enable this if you want to have GitHub Deployments triggered
-                  # gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-                  # Optional: Switch what branch you are publishing to.
-                  # By default this will be the branch which triggered this workflow
-                  # branch: main
-                  # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
                   wranglerVersion: "3"
 ```
 
 #### Vercel
 
-也不错，但不如 pages
+Vercel 和前两个平台不同，vercel 默认是需要绑定 git 仓库，但是也仍然可以通过 github actions 进行更新。
+
+默认情况下，vercel 绑定你的 github 仓库，选择 hugo 平台，然后默认输出即可。
 
 #### 阿里云 oss
 
-国内用户推荐
+有备案域名的话非常推荐，国内速度可以说是相当快了，不过也有缺点，就是需要计费。如使用阿里云 oss 则可以把图片一起放在项目目录下。
+
+```
+name: Bigfa
+
+on:
+    push:
+        branches:
+            - main # master 更新触发
+
+jobs:
+    build-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  submodules: recursive
+                  fetch-depth: 0
+
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v2
+              with:
+                  hugo-version: latest
+                  extended: true
+
+            - name: Build notability demo
+              run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://cl.wpista.com/
+
+            - name: upload files to OSS
+              uses: fangbinwei/aliyun-oss-website-action@v1
+              with:
+                  accessKeyId: ${{ secrets.ACCESS_KEY_ID }}
+                  accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
+                  bucket: your-bucket-name
+                  # use your own endpoint
+                  endpoint: oss-cn-shanghai.aliyuncs.com
+                  folder: ./public
+```
+
+### 总结
+
+整套流程看上去比较复杂，其实只需要修改下变量即可，即使不理解也能正常使用，当项目有更新的时候即使 `commit` 和 `push` 即可。想深度自定义的话还是需要了解一下 git 的基本原理，github actions 本身还是非常强大的，而 cloudflare 全家桶更是良心的不行。把动态网站那一套移植过来完全不成问题，具体玩法可以参考我站内的其他文章。
