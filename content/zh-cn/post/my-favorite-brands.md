@@ -19,5 +19,6 @@ draft: true
 5. Rimowa
 6. Peak Design
 7. Starbucks
+8. Polaroid
 
 为什么对品牌情有独钟，因为都是很大的标准化，标准化意味着熟悉的感觉。

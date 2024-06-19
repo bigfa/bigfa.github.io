@@ -1,13 +1,143 @@
 ---
 title: "Hugo 简明教程 04"
-description:
+description: "本文主要讲解 hugo 的部署方法。"
 categories: ["hugo"]
 tags: []
 date: 2024-05-29T17:05:06+08:00
 cover:
 hidden: false
 comments: true
-draft: true
 ---
 
-本文讲解如果自定义主题。
+本文主要讲解 hugo 的部署方法。
+
+### build 命令详解
+
+除了基础的 `hugo build` 其实 `build`命令支持不少参数，下面介绍一下比较有用的参数。
+
+```
+  -b, --baseURL string             绑定域名, 比如 https://fatesinger.com/
+  -D, --buildDrafts                包含草稿
+  -E, --buildExpired               包含过期内容
+  -F, --buildFuture                包含日期在将来的内容
+  -c, --contentDir string          content 目录，一班不需要改
+      --disableKinds strings       禁用页面类型，同时生成多个站点时有用
+      --gc                         构建完成后移除部分缓存
+      --ignoreCache                忽略缓存
+      --minify                     压缩html
+  -t, --theme strings              要使用的主题，同时生成多个站点时有用
+```
+
+一般来说，默认 `hugo build` 就可以了，像我这种多平台多域名多主题部署这些参数才有意义。
+
+### 手动部署
+
+绝大部分人都推荐的方法是通过 github actions 自动部署，我个人觉的手动部署也很方便。自动部署也只不过在云端进行手动部署的步骤而已。简单来说 hugo 部署就两步
+
+1. 使用 `hugo build` 命令生成 `html` 文件
+2. 将生成的文件上传到托管平台或者服务器
+
+执行完构建命令后你可以把生成的 html 文件上传到任何你喜欢的平台。如果你没有特别的需求甚至也不需要用 git 来原理仓库，毕竟对于普通用户来说，各种命令难以理解。
+
+本地手动部署还有一个优点就是构建速度很快，一般 PC 的配置还是要比服务器的配置强一点，尤其 Mac 的 ssd，构建速度很快。手动上传也可以克服各种网络困难。如果你上传到自己的服务器，那么你还需要部署一个简单的 `nginx` 服务，因为是纯静态，所以只需要傻瓜配置。
+
+### 自动部署
+
+通过 github actions，联动各个平台进行自动部署，想自动部署都需要使用 git 仓库，需要学习一些基础的 git 命令，或者使用可视化工具，如果你不想学习命令，我推荐使用 github 官方的客户端。
+
+自动部署的原理都是在云端执行 build 命令，然后通过密钥上传到平台。也可以在平台直接绑定 github 仓库，这样更懒人，但需要自己配置一下构建命令，还是那句话，普通用户直接默认配置足够。
+
+#### Github pages
+
+如果域名都懒得买，我最推荐这个托管平台，直接给你一个`*.github.io`的域名，虽然百度不收录，但也无所谓了。当然，github pages 是支持绑定域名的，但既然是有域名，我更推荐使用下面的 Cloudflare pages，网络上会更顺畅一些。
+
+下面是自动部署 github pages 的 action 配置 `.github/workflows/main.yml`，在`.github/workflows/`下的 yml 就是 github actions 的配置文件
+
+```
+name: Bigfa
+
+on:
+    push:
+        branches:
+            - main # master 更新触发
+
+jobs:
+    build-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  submodules: recursive
+                  fetch-depth: 0
+
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v2
+              with:
+                  hugo-version: latest
+                  extended: true
+
+            - name: Build
+              run: hugo --gc --minify --cleanDestinationDir --ignoreCache
+
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  personal_token: ${{ secrets.Bigfa }} # personal_token 这里新建一个 https://github.com/settings/tokens
+                  PUBLISH_BRANCH: gh-pages # 推送到当前 gh-pages 分支
+                  PUBLISH_DIR: ./public # hugo 生成到 public 作为跟目录
+                  commit_message: ${{ github.event.head_commit.message }}
+```
+
+#### Cloudflare pages
+
+有域名最推荐，推荐使用全家桶，下面是自动上传到 cloudflare pages 的配置文件`.github/workflows/main.yml`
+
+```
+name: Bigfa
+
+on:
+    push:
+        branches:
+            - main # master 更新触发
+
+jobs:
+    build-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  submodules: recursive
+                  fetch-depth: 0
+
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v2
+              with:
+                  hugo-version: latest
+                  extended: true
+
+            - name: Build notability demo
+              run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://cl.wpista.com/
+
+            - name: Publish to Cloudflare Pages
+              uses: cloudflare/pages-action@v1
+              with:
+                  apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+                  accountId: d0a457cef81f6ea340f9ff6ca6b6ff7a
+                  projectName: notability
+                  directory: ./public
+                  # Optional: Enable this if you want to have GitHub Deployments triggered
+                  # gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+                  # Optional: Switch what branch you are publishing to.
+                  # By default this will be the branch which triggered this workflow
+                  # branch: main
+                  # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
+                  wranglerVersion: "3"
+```
+
+#### Vercel
+
+也不错，但不如 pages
+
+#### 阿里云 oss
+
+国内用户推荐
