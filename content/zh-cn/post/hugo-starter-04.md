@@ -130,9 +130,37 @@ jobs:
 
 #### Vercel
 
+Vercel 很棒，但还是和 `next.js` 是绝配。[我的 vercel 版本](https://vercel.wpista.com/)，默认情况下国内访问速度一般，但能对付用。
+
 Vercel 和前两个平台不同，vercel 默认是需要绑定 git 仓库，但是也仍然可以通过 github actions 进行更新。
 
-默认情况下，vercel 绑定你的 github 仓库，选择 hugo 平台，然后默认输出即可。
+默认情况下，vercel 绑定你的 github 仓库，选择 hugo 平台，然后默认输出即可。默认情况下 vercel 的 hugo 版本很低，推荐手动指定版本。项目根目录下创建文件 `vercel.json`
+
+```
+{
+  "build": {
+    "env": {
+      "HUGO_VERSION": "0.125.4"
+    }
+  }
+}
+```
+
+设置环境变量
+
+```
+Vercel -> Project-> Settings -> Environment Variables
+————
+HUGO_VERSION 0.125.4
+```
+
+![](//static.fatesinger.com/2024/06/4e1sq5sowwvykc0y.png)
+
+这里建议重新设置下 build command,如果你的配置文件中已经配置绑定域名，则可忽略`-b` 参数。
+
+```
+hugo --gc --minify -b https://vercel.wpista.com/
+```
 
 #### 阿里云 oss
 
