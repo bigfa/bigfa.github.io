@@ -7,7 +7,6 @@ date: 2024-06-20T19:11:24+08:00
 cover:
 hidden: false
 comments: true
-draft: true
 ---
 
 [项目地址](https://github.com/bigfa/hugo-cf-worker)，已经和点赞评论聚合为一个项目。
@@ -31,6 +30,18 @@ database_id = "81e23e8a-3b26-4025-acf8-1123bfd5af74"
 ```
 
 `database_name` 和 `database_id` 是你需要修改的，可在 Cloudflare 后台看到。
+
+### 优点
+
+-   不依赖啥框架，原生 js，方便自行维护
+-   部署在 cloudflare 上，免费切数据可控
+
+### 缺点
+
+-   暂无管理后台，不方便管理评论
+-   非傻瓜式部署
+
+后续准备弄一个后台管理页面直接部署在 cloudflare pages 上。
 
 ### 本地开发
 
@@ -70,15 +81,20 @@ actionDomain = 'https://v.wpista.com/'
 
 `actionDomain` 就是你 Worker 中绑定的域名。
 
-如果其他主题想使用，可复制我主题里的`assets/ts/utils.ts` 和`assets/ts/comment.ts`两个文件到你的主题中。
+如果其他主题想使用，可复制我主题里的`assets/ts/utils.ts`、`assets/ts/comment.ts`和`layouts/partials/commentlist.html`两三文件到你的主题中。
 
-样式`assets/scsss/comment.scsss`
+样式文件为 `assets/scsss/comment.scsss`，在你想使用的文章详情页使用下面的代码调用。
+
+```
+{{ partial "commentlist.html" . }}
+```
 
 调用方法。
 
 ```
 new farallonComment({
     actionDomain: "你的域名", // worker 域名
+    postSelector: ".post--ingle__comments" // 判断是否为文章详情页
 });
 
 ```
