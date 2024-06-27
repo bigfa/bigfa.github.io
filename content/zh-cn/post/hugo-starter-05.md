@@ -1,22 +1,40 @@
 ---
 title: "Hugo 简明教程 05"
 description:
-categories: []
+categories: ["hugo"]
 tags: []
-date: 2024-06-21T10:11:35+08:00
+date: 2024-06-27T10:11:35+08:00
 cover:
 hidden: false
 comments: true
-draft: true
 ---
 
-本文主要讲解 hugo 目录结构和主题目录结构的基本逻辑。
+本文主要讲解 hugo 目录结构和主题目录结构的基本逻辑。Hugo 中有一些概念如 UnionFS,Hugo pipes 对普通用户来说很难理解，我这里尽量用白话来解释，可能不是很准确，但能让你大致理解 hugo 的文件逻辑。
+
+### 联合文件系统
+
+首先要理解一个概念就是 Union file system（联合文件系统），简单来说就是可以多个目录挂载到同一个位置。当两个或多个文件具有相同路径的时候，优先级的顺序遵循挂载的顺序。比如可以将任意目录挂载到`content`文件夹下。
+配置文件如下`hugo.yaml`，**用白话来讲就是合并多个文件夹，路径相同的时候前面的优先**。
 
 ```
-my-theme/
+module:
+  mounts:
+  - source: content
+    target: content
+  - source: /home/rich/shared-content
+    target: content
+```
+
+这样`/home/rich/shared-content` 下的 markdown 文件也会被视为`content`下的内容，一般情况下普通用户不会这么操作。**但是我们修改主题的时候，可以通过在项目目录的相同位置放置一个副本来覆盖主题的模板**。这也是我推荐的修改主题的方法，可以做到不污染原主题文件，以免更新主题的时候修改的部分被覆盖。
+
+### 主题目录
+
+下面介绍一下 hugo 主题的目录结构，使用 `hugo new theme` 命令创建的初始目录如下。
+
+```
+farallon/
 ├── archetypes/
 ├── assets/
-├── content/
 ├── data/
 ├── i18n/
 ├── layouts/
@@ -27,69 +45,67 @@ my-theme/
 └── theme.toml
 ```
 
-使用上述的联合文件系统，Hugo 将这些目录中的每一个挂载到项目中对应的位置。当两个文件有相同的路径时，项目目录中的文件将具有优先权。这允许你，例如，通过在项目目录的相同位置放置一个副本来覆盖一个主题的模板。
+#### archetypes
 
-如果你同时使用来自两个或多个主题或模块的组件，并且出现了路径冲突，那么第一个挂载将具有优先权。
+原型文件，前面的文章已经讲过。
 
-> 当两个或多个文件具有相同的路径时，优先级的顺序遵循挂载的顺序。例如，如果共享的内容目录包含 books/book-1.md，它将被忽略，因为项目的内容目录是首先被挂载的。
+#### assets 和 static
 
-hugo.yaml
+`static` 目录下的文件在构建后会被原样复制到`public` 文件夹下，`assets`则可以用来存放一些编译前的文件如 `scss`、`typescript` 等，`assets` 文件夹下的文件可以使用`resources.Get` 来调用。
 
-```
-module:
-  mounts:
-  - source: content
-    target: content
-  - source: /home/user/shared-content
-    target: content
-```
+#### data
 
-Hugo 创建了一个联合文件系统，允许你将两个或者更多的目录挂载到同一个位置。例如，假设你的家目录中包含一个目录里的 Hugo 项目，以及另一个目录里的共享内容：
+用来存储一些特别的数据，实现效果，不过不是特别复杂我还是推荐使用 `markdown` 的 `front meta` 来存储。
 
-`layouts/_default` 文件夹
+#### i18n
 
-`layouts/patials` 文件夹
+国际化也就是翻译文件，适合多语言站点。
 
-`layouts/shortcodes` 文件夹
+#### layouts
 
-其他 layouts 下的文件夹均可以理解为和 section 对应，这里又分设置为 taxonomy 和普通 section
+这个就是主题的模版文件了，除了`layouts/_default`、`layouts/patials`、`layouts/shortcodes` 这三个文件夹，其他 `layouts` 下的文件夹均可以理解为和 `section` 对应，这里又分设置为 `taxonomy` 和普通 `section`。
 
-taxonomy
+**taxonomy**
 
 1. `list.html` 分类列表
 2. `term.html` 文章列表
 3. `xxx.html` 文章列表模版 xxx 可定义为 layout
 
-使用
-
-`content/taxonomy/\_index.md`
+模版样式使用方法，`content/taxonomy/\_index.md`。
 
 ```
 layout: xxx
 ```
 
-参考我主题里的 tavel 样式
+具体可以参考我主题里的 `travel` 分类样式。
 
-`partilas` 可以理解为可复用的文件
+**普通 section**
 
-使用`{{ partial "post.html" . }}`来调用
+1. `list.html` 列表
+2. `single.html` 详情页
+3. `xxx.html` 自定义详情页 xxx 可定义为 layout
 
-`shortcode` 短代码
+模版样式使用方法，`content/page/movie.md`。
 
-static 静态文件
+```
+layout: xxx
+```
 
-assets 目录包含了通常通过资源管道传输的全局资源。这包括像图片、CSS、Sass、JavaScript 和 TypeScript 这样的资源。查看详情。
+具体可以参考我主题里的自定义页面样式。
 
-static 目录包含了在你构建网站时会被复制到 public 目录的文件。例如：favicon.ico、robots.txt，以及用于验证网站所有权的文件。在页面捆绑和资源管道引入之前，static 目录也被用来存放图片、CSS 和 JavaScript。
+`partilas` 下的文件可以理解为可复用的文件，可以使用`{{ partial "post.html" . }}`来调用。
 
-i18n
+`shortcode` 则为一些自定义短代码。
 
-国际化，适合多语言站点
+一些自定义短代码文件。
 
-多语言可玩性更高
+#### \_default
 
-data
+此文件夹是优先级最低的，只有没有任何匹配才会使用此文件夹下的文件。
 
-用来存储一些特别的数据，实现效果，不过不是特别复杂我还是推荐使用 markdown 的 front meta 来存储
+1. `baseof.html` 基础框架
+2. `list.html` 文章列表
+3. `single.html` 文章详情页
+4. `_markup` 文件夹则可以对 hugo 默认渲染逻辑进行修改，`render-link.html` 可对超链接进行修改，我的主题也是通过此文件实现了豆瓣条目的`embed`功能。
 
-archetypes 原型
+还有一些其他文件如首页`index.html` 404 页面`404.html`就非常好理解了，不单独介绍了。
