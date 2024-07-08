@@ -1,7 +1,7 @@
 ---
 title: "Fujifilm X-S20 短期使用体验"
 description:
-categories: ["zine"]
+categories: ["gears"]
 tags: ["mini"]
 series: ["apple"]
 date: 2023-11-09T18:57:34+08:00
