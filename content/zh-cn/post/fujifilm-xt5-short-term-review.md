@@ -1,5 +1,5 @@
 ---
-title: "Fujifilm X-T5 短期使用体验"
+title: "富士 X-T5 短期使用体验"
 description: "Fujifilm X-T5 短期使用体验"
 categories: ["gears"]
 tags: ["fujifilm"]

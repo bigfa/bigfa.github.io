@@ -1,5 +1,5 @@
 ---
-title: "Fujifilm X-S20 长期使用体验"
+title: "富士 X-S20 长期使用体验"
 description:
 categories: ["gears"]
 tags: []
