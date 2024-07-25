@@ -18,5 +18,5 @@ github = 'https://github.com/bigfa'
 footer_sns = true
 post_like = true
 post_view = true
-actionDomain = 'http://localhost:8787/'
+actionDomain = 'http://localhost:3000/api/'
 dbAPIBase = 'https://node.wpista.com/'
