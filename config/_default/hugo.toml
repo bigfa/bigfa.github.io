@@ -99,3 +99,22 @@ theme = 'farallon'
   [permalinks.taxonomy]
     tags = '/topics/'
     categories = '/cats/'
+
+[related]
+  includeNewer = true
+  [[related.indices]]
+    applyFilter = false
+    cardinalityThreshold = 0
+    name = 'tags'
+    pattern = ''
+    toLower = false
+    type = 'basic'
+    weight = 80
+  [[related.indices]]
+    applyFilter = false
+    cardinalityThreshold = 0
+    name = 'date'
+    pattern = ''
+    toLower = false
+    type = 'basic'
+    weight = 10
