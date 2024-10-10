@@ -2,7 +2,7 @@
 title: "苏州 City Walk"
 description:
 categories: ["travel"]
-tags: []
+tags: ["china"]
 date: 2024-05-22T14:10:33+08:00
 cover:
 hidden: false

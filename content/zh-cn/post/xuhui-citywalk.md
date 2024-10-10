@@ -2,7 +2,7 @@
 title: "梧桐区 City Walk"
 description:
 categories: ["travel"]
-tags: []
+tags: ["china"]
 date: 2024-09-18T21:59:43+08:00
 cover:
 hidden: false

@@ -2,7 +2,7 @@
 title: "麦积山仿古"
 description: Maijishan Cave-Temple Complex
 categories: ["travel"]
-tags: []
+tags: ["china"]
 date: 2024-09-24T16:28:53+08:00
 cover:
 hidden: false
