@@ -2,7 +2,7 @@
 title: "RICOH GR III Diary Editon"
 description: 理光 GR3 日记版
 categories: ["gears"]
-tags: []
+tags: ["ricoh"]
 date: 2024-07-04T13:32:37+08:00
 cover:
 hidden: false

@@ -2,7 +2,7 @@
 title: "九寨沟"
 description:
 categories: ["travel"]
-tags: []
+tags: ["china"]
 date: 2024-09-21T19:49:13+08:00
 cover:
 hidden: false

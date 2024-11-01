@@ -2,7 +2,7 @@
 title: "丽江金茂凯悦甄选"
 description:
 categories: ["hotels"]
-tags: ["Lijiang"]
+tags: ["china"]
 date: 2024-04-16T14:02:14+08:00
 cover: "https://static.fatesinger.com/2024/04/jtl06ju0j1kplx8n.jpg"
 hidden: false

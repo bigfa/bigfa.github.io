@@ -2,7 +2,7 @@
 title: "青岛瑞吉"
 description:
 categories: ["travel"]
-tags: []
+tags: ["china"]
 date: 2024-05-29T17:30:00+08:00
 hidden: false
 comments: true

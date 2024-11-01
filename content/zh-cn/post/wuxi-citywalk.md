@@ -2,7 +2,7 @@
 title: "无锡 City Walk"
 description:
 categories: ["travel"]
-tags: []
+tags: ["china"]
 date: 2024-05-21T17:37:39+08:00
 cover:
 hidden: false
