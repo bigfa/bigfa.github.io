@@ -9,6 +9,8 @@ hidden: false
 comments: true
 ---
 
+![](//static.fatesinger.com/2024/11/8y8xbgbs8xkin9n9.jpg)
+
 Mac Studio 初代的时候就很心水，一方面价格还是有些劝退，另一方面是自己不想贴钱工作。
 
 相比于各个渠道，我最推荐京东老款的教育优惠，只要 12499，全网最低价。
