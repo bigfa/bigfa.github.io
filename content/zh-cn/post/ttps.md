@@ -1,27 +1,29 @@
 ---
-title: "高端人才通行证计划"
+title: "香港高才通计划"
 description:
-categories: []
+categories: ["zine"]
 tags: []
-date: 2024-07-05T15:52:57+08:00
+date: 2024-11-03T5:52:57+08:00
 cover:
 hidden: false
 comments: true
-draft: true
 ---
 
-国内有 11 所大学满足要求，本人刚好符合条件，果断申请了。
+![](https://static.fatesinger.com/2024/11/csxv58zm911z617t.jpg)
 
--   Tsinghua University / 清華大學
--   Peking University / 北京大學
--   Fudan University / 復旦大學
--   Zhejiang University / 浙江大學
--   Shanghai Jiao Tong University / 上海交通大學
--   University of Science and Technology of China / 中國科學技術大學
--   Sun Yat-sen University / 中山大學
--   Nanjing University / 南京大學
--   Huazhong University of Science and Technology / 華中科技大學
--   Wuhan University / 武漢大學
--   Xi'an Jiaotong University / 西安交通大學
--   Harbin Institute of Technology / 哈爾濱工業大學
--   Central South University / 中南大學
+前阵子申请了香港高才，过程不是太顺利，但最后也过了。这东西目前并没有太大意义，7 年才能拿到永居，有了永居才能拿到护照。如果年轻个十岁这样很好，但现在这个年纪，七年实在是太久了。相比优才，高才非常简单，而且审核速度快，一般来说有人给你仔细讲这个不是要赚你中介费就是要卖你保险或者拉你卖保险。
+
+-   7 月初提交
+-   一个月提示补件，大学成绩单和社保资料
+-   在教务处打印了成绩单，本人没有社保，提交了纳税和工资流水
+-   被拒，要求二次补件，提供了营业执照和纳税证明
+-   通过，缴费后拿到签证并预约通行证逗留签
+-   出入境办理换证和签注，预约办理香港临时身份证
+-   香港办理临时身份证并拿到行街纸
+-   拿证
+
+如果不过港工作，其实拿到 D 签就可以无限制往返了，临时身份证除了能走香港居民通道也没啥其他优势了。个人觉得临时身份证最强的就是合法香港生娃，如果有这个需求花点银子来搞定也不是不行，否则还是该干啥干啥吧。临时身份证受养人不能带父母，永居才能带父母。
+
+另外就是续签问题，中介宣传如何如何困难基本上就是要拉你卖保险了，实际上只要有个香港工作就可以问问续签，不住香港都没问题。
+
+最后就是官网可以直接查看申请条件，只要本科符合条件直接申请就完事了，中介都是骗你钱的。
