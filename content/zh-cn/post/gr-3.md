@@ -1,6 +1,6 @@
 ---
-title: "RICOH GR III Diary Editon"
-description: 理光 GR3 日记版
+title: "GR III 日记版短期使用体验"
+description: GR III 日记版短期使用体验
 categories: ["gears"]
 tags: ["ricoh"]
 date: 2024-07-04T13:32:37+08:00
@@ -9,11 +9,13 @@ hidden: false
 comments: true
 ---
 
-![1/1600s ISO 100 ƒ2.8](https://static.fatesinger.com/2024/07/g207tvqnoxga1xo7.jpg)
+![GR III Diary Edtion](https://static.fatesinger.com/2024/11/7uim98pr3otvk3i6.jpg)
 
-本来想着凑热闹玩一玩，但这玩意远超我预期啊，尤其是金属机身真的是深得我心，不过缺点也是很明显，就是做工奇差无比。
+这台机器也是我很早就买了，现在差不多也是三千多快门数，买的契机是在京东抢到一台 X-S20 套机，体验了一把倒爷的快乐，于是就购入这台当红炸子鸡。本来想着凑热闹玩一玩就卖掉，没想到这玩意远超我预期，尤其是金属机身真的是深得我心，最后不但留下来了还搭上一台 GR IIIx。
 
 ### 优点
+
+GR 系列的优点就是 APS-C 画幅口袋机，所以优点都差不多，GR III 和 GR IIIx 比最近对焦距离有很大优势，微距模式最近对焦距离为 6cm。
 
 1. 体积较小，这么小的体积拥有 ASP-C 画幅，其实已经不需要再说什么了，就是最强口袋机。
 2. 自带 2Gb 存储，虽然不及哈苏的 1T 偶尔也对付
@@ -21,6 +23,12 @@ comments: true
 4. 金属机身
 5. 有微距模式，虽然需要手动切换，但总归是好的
 6. 正副片预设都不错，高对比黑白个人倒不是很喜欢，大部分时候都是正片。
+
+购入 GR III 之后我就很少把富士带出门了，尤其摔了一只镜头后，更不愿意带出门了，日本之行我就只带了 GR III，是 one bag travel 的绝佳搭档。
+
+![GR III diary edtion](https://static.fatesinger.com/2024/11/o7wk6sfip3pfrmmx.jpg)
+
+GR III 刚好放在 quick access 区，GR IIIx 因为镜头厚一点进出没那么方便，频繁进出其实我是有一点担心磨损过快，有考虑买一个原厂的皮套的，但 400 的价格实在是太高了，闲鱼二手也要卖到 300，这个皮套是理光唯一还保值的配件了。
 
 ### 缺点
 
@@ -38,10 +46,22 @@ comments: true
 
 还有一点就是挂绳孔实在太小了，PD 的扣子很难穿进去。
 
+![1/1600s ISO 100 ƒ2.8](https://static.fatesinger.com/2024/11/o7wk6sfip3pfrmmx.jpg)
+
+最近使用发现在一些大光比的场景测光很不准，而且机器没有 HDR 模式，也不支持胶片模拟包围，这些都是软件层面的，卖这么贵功能还不都给到位，真的是无语。
+
 ### 总结
 
-要是 35 焦段就好了。
+![GR III Diary Edtion / GR IIIx Urban Editon](https://static.fatesinger.com/2024/11/hzyq83mhnb7caml5.jpg)
 
-虽然有一堆缺点，不过这东西可以揣在裤兜里，日常带着真的是相当不错了。但迫于这东西现在的价格，其实完全没必要买了。而且我觉得摄影完全就是一个伪需求，记录生活手机真的足够了，何况很多人把相机买回去就是吃灰。
+虽然 GR 有一堆缺点，不过这东西可以揣在裤兜里，日常带着真的是相当不错了，最后放几张京都的照片，都是本机拍摄。
 
-最近感觉我一直都是游戏人生，没怎么好好过日子，最近要搬家，发现自己的消费观真的很有问题，这么小的一个玩意比我的电视还贵，可以买一套大牌洗衣机冰箱了，好好生活，远离这些有的没的吧。
+![京都](https://static.fatesinger.com/2024/09/1f24rxn8v1ofaded.jpg)
+
+![京都站](https://static.fatesinger.com/2024/11/3kc36b79hzlvlomk.jpg)
+
+![京都塔](https://static.fatesinger.com/2024/11/srpexwdvi32mnquy.jpg)
+
+![樱花妹](https://static.fatesinger.com/2024/11/6ouf9l7g33mv0lns.jpg)
+
+![](https://static.fatesinger.com/2024/11/5jmuu6k5zwsjmu3o.jpg)
