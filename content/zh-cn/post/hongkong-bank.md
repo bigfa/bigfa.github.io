@@ -1,8 +1,8 @@
 ---
 title: "香港银行卡开户"
 description:
-categories: ["zibe"]
-tags: []
+categories: ["zine"]
+tags: ["hongkong"]
 date: 2024-11-15T13:28:00+08:00
 cover:
 hidden: false
