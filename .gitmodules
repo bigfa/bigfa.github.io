@@ -4,3 +4,6 @@
 [submodule "themes/notability"]
 	path = themes/notability
 	url = https://github.com/bigfa/hugo-theme-notability.git
+[submodule "themes/hera"]
+	path = themes/hera
+	url = https://github.com/bigfa/hugo-theme-hera.git
