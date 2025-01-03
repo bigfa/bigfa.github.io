@@ -21,3 +21,4 @@ post_view = true
 actionDomain = 'https://v.wpista.com/'
 dbAPIBase = 'https://dbapi.wpista.com/'
 zoom= true
+defaultCover = 'https://static.fatesinger.com/2024/10/n096uyvg1d4raz6i.jpg'

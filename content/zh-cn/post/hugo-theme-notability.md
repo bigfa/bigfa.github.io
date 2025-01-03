@@ -132,25 +132,6 @@ my gear
 
 相当于把数据存在了 post meta 中，这样使用 markdown 来维护很方便。
 
-### 豆瓣收藏使用方法
-
-微信扫码登录https://node.wpista.com/
-
-输入你的豆瓣数字 id，点击保存即可自动同步豆瓣记录。
-
-点击 Get integration token 会生成一个 token。
-
-新建文件`movies/_index.md`，下面的 token 设置为你的 token，本 token 只作为拉取列表使用，并无其他用途。
-
-```
----
-title: "书影音游"
-description: "hi"
-token: "2bfb9a8d037a7352c9d369b85d33ac83e39a"
----
-
-```
-
 ### 豆瓣条目
 
 直接插入链接单独一行即可
