@@ -91,8 +91,6 @@ hugo new content memo/1.md
 
 {{<link "garden-pavilion">}}
 
-## 国内用户特别设置
-
 ### 物品列表使用方法
 
 在`content`目录下新建`gears/_index.md`，按照下面的格式设置`faves`字段即可

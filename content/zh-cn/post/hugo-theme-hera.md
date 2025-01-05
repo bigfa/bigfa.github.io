@@ -1,5 +1,5 @@
 ---
-title: "Hugo 主题 Hero"
+title: "Hugo 主题 Hera"
 description:
 categories: ["hugo"]
 tags: ["hugo"]
@@ -9,7 +9,7 @@ hidden: false
 comments: true
 ---
 
-![Hugo 主题 Hero](https://static.fatesinger.com/2024/12/2u80bhyxkmru4o9j.png)
+![Hugo 主题 Hera](https://static.fatesinger.com/2024/12/2u80bhyxkmru4o9j.png)
 
 > 本主题使用古法制作，不依赖三方框架。
 
@@ -125,8 +125,6 @@ layout: travel
 自行取掉多余字符
 
 {{<link "garden-pavilion">}}
-
-## 国内用户特别设置
 
 ### 物品列表使用方法
 
