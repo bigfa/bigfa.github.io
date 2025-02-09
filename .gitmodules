@@ -7,3 +7,6 @@
 [submodule "themes/hera"]
 	path = themes/hera
 	url = https://github.com/bigfa/hugo-theme-hera.git
+[submodule "themes/puma"]
+	path = themes/puma
+	url = git@github.com:bigfa/hugo-theme-puma.git

@@ -75,6 +75,18 @@ jobs:
                   publish_dir: ./public
                   commit_message: ${{ github.event.head_commit.message }}
 
+            - name: Build puma demo
+              run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://bigfa.github.io/hugo-theme-puma/ -t puma
+
+            - name: Deploy puma Demo
+              uses: peaceiris/actions-gh-pages@v3.9.3
+              with:
+                  personal_token: ${{ secrets.PERSONAL_TOKEN }}
+                  external_repository: bigfa/hugo-theme-puma
+                  publish_branch: gh-pages # default: gh-pages
+                  publish_dir: ./public
+                  commit_message: ${{ github.event.head_commit.message }}
+
             - name: Build notability demo
               run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://cl.wpista.com/
 
