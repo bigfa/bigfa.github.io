@@ -26,7 +26,7 @@ jobs:
             - name: Search
               uses: caibingcheng/hugo-algolia2@v1
               with:
-                  input: "content/zh-cn/story/**"
+                  input: "content/zh-cn/post/**"
                   index: "bigfa"
                   apikey: ${{ secrets.ALGOLIA_WRITE_KEY }}
                   appid: "FX1CAS2SD8"
