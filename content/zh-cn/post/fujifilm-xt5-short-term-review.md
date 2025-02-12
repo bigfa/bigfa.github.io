@@ -7,8 +7,6 @@ date: 2024-03-19T16:06:19+08:00
 cover: "https://static.fatesinger.com/2024/01/p6krrw3jrw3hu7nd.jpeg"
 hidden: false
 comments: true
-story_id: 101768
-drate: true
 ---
 
 ![Fujifilm X-T5 短期使用体验](https://static.fatesinger.com/2024/01/p6krrw3jrw3hu7nd.jpeg)
