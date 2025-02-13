@@ -13,7 +13,7 @@ comments: true
 
 > 本主题使用古法制作，不依赖三方框架。
 
-Hugo 当前版本 `0.0.6`，最后更新日期 `2025/02/10`
+Hugo 当前版本 `0.0.7`，最后更新日期 `2025/02/13`
 
 [演示地址](https://bigfa.github.io/hugo-theme-puma/)
 
