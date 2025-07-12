@@ -96,6 +96,11 @@ jobs:
             - name: Build EO demo
               run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://eo.wpista.com/
 
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "22.11.0" # 选择适合的 Node.js 版本
+
             - name: Publish to Cloudflare Pages
               run: npx edgeone pages deploy ./public -n eopages -t ${{ secrets.EO }} [-e <env>]
               env:
