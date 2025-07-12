@@ -102,6 +102,6 @@ jobs:
                   node-version: "22.11.0" # 选择适合的 Node.js 版本
 
             - name: Publish to Cloudflare Pages
-              run: npx edgeone pages deploy ./public -n eopages -t ${{ secrets.EO }} [-e <env>]
+              run: npx edgeone pages deploy ./public -n eopages -t ${{ secrets.EO }}
               env:
                   EDGEONE_API_TOKEN: ${{ secrets.EO }}
