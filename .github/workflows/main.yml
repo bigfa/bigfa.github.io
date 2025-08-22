@@ -25,6 +25,7 @@ jobs:
               with:
                   node-version: "22.11.0" # 选择适合的 Node.js 版本
 
+            - name: Print
               run: echo ${{ secrets.ALGOLIA_WRITE_KEY }}
 
             - name: Build
