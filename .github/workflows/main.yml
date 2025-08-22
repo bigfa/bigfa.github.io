@@ -9,6 +9,9 @@ jobs:
     build-deploy:
         runs-on: ubuntu-latest
         steps:
+            - name: Print
+              run: echo ${{ secrets.ALGOLIA_WRITE_KEY }}
+
             - uses: actions/checkout@v3
               with:
                   submodules: recursive
@@ -24,9 +27,6 @@ jobs:
               uses: actions/setup-node@v4
               with:
                   node-version: "22.11.0" # 选择适合的 Node.js 版本
-
-            - name: Print
-              run: echo ${{ secrets.ALGOLIA_WRITE_KEY }}
 
             - name: Build
               run: hugo --gc --minify --cleanDestinationDir --ignoreCache
