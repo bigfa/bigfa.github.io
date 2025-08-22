@@ -7,3 +7,18 @@
 [submodule "themes/puma"]
 	path = themes/puma
 	url = https://github.com/bigfa/hugo-theme-puma.git
+[submodule "themes/berry"]
+	path = themes/berry
+	url = git@github.com:bigfa/hugo-theme-berry.git
+[submodule "themes/coffin"]
+	path = themes/coffin
+	url = git@github.com:bigfa/hugo-theme-coffin.git
+[submodule "themes/jaguar"]
+	path = themes/jaguar
+	url = git@github.com:bigfa/hugo-theme-jaguar.git
+[submodule "themes/sulli"]
+	path = themes/sulli
+	url = git@github.com:bigfa/hugo-theme-sulli.git
+[submodule "themes/sierra"]
+	path = themes/sierra
+	url = git@github.com:bigfa/hugo-theme-sierra.git

@@ -18,42 +18,14 @@ article:
         other: TOC
 
     relatedContent:
-        other: Related Content
+        other: Related Posts
 
     lastUpdatedOn:
         other: Last update on
 
     readingTime:
-        other: "reading Time: {{ .Count }} min"
+        one: "{{ .Count }} min read"
+        other: "{{ .Count }} mins read"
 
-timeFormat:
-    second:
-        other: sec
-    seconds:
-        other: secs
-    minite:
-        other: min
-    minites:
-        ohter: mins
-    hour:
-        other: hour
-    hours:
-        other: hours
-    days:
-        other: days
-    day:
-        other: day
-    week:
-        other: week
-    weeks:
-        other: week
-    month:
-        other: month
-    months:
-        other: months
-    year:
-        other: year
-    years:
-        other: years
-    ago:
-        other: ago
+    readingViews:
+        other: " views"

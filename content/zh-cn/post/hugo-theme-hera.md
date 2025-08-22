@@ -13,9 +13,9 @@ comments: true
 
 > 本主题使用古法制作，不依赖三方框架。
 
-Hugo 当前版本 `0.0.10`，最后更新日期 `2025/02/13`
+Hugo 当前版本 `0.2.5`，最后更新日期 `2025/08/17`
 
-[演示地址](https://bigfa.github.io/hugo-theme-hera/)
+[演示地址](https://hera.wpista.com/)
 
 ## 使用指南
 
@@ -122,7 +122,7 @@ layout: travel
 ~{~{<link "garden-pavilion">~}~}
 ```
 
-自行取掉多余字符
+自行去掉多余字符
 
 {{<link "garden-pavilion">}}
 

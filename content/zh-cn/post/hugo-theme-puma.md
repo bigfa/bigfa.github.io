@@ -13,9 +13,9 @@ comments: true
 
 > 本主题使用古法制作，不依赖三方框架。
 
-Hugo 当前版本 `0.0.7`，最后更新日期 `2025/02/13`
+Hugo 当前版本 `0.1.0`，最后更新日期 `2025/08/17`
 
-[演示地址](https://bigfa.github.io/hugo-theme-puma/)
+[演示地址](https://puma.wpista.com/)
 
 ## 使用指南
 
@@ -110,7 +110,7 @@ hugo new content memo/1.md
 ~{~{<link "garden-pavilion">~}~}
 ```
 
-自行取掉多余字符
+自行去掉多余字符
 
 {{<link "garden-pavilion">}}
 
@@ -123,7 +123,6 @@ hugo new content memo/1.md
 title: "Gears"
 subtitle: "my fuji gears"
 date: 2021-03-06T15:39:00-06:00
-draft: false
 faves:
     [
         {

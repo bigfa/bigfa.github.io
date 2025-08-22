@@ -28,12 +28,8 @@ theme = 'farallon'
     url="/en/topics/"
     weight="1"
     [[languages.en.menu.main]]
-    name="About"
-    url="/en/about/"
-    weight="3"
-    [[languages.en.menu.main]]
     name="Stories"
-    url="/en/archive/"
+    url="/en/archives/"
     weight="1"
   [languages.en.permalinks]
     [languages.en.permalinks.section]
@@ -71,7 +67,7 @@ theme = 'farallon'
     weight="1"
     [[languages.zh-cn.menu.main]]
     name="文章"
-    url="/archive/"
+    url="/archives/"
     weight="1"
 
 [taxonomies]
@@ -118,3 +114,7 @@ theme = 'farallon'
     toLower = false
     type = 'basic'
     weight = 10
+
+[pagination]
+  disableAliases = false
+  pagerSize = 9

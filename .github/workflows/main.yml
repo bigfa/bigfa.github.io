@@ -1,4 +1,4 @@
-name: Bigfa
+name: Rich
 
 on:
     push:
@@ -20,6 +20,13 @@ jobs:
                   hugo-version: latest
                   extended: true
 
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "22.11.0" # 选择适合的 Node.js 版本
+
+              run: echo ${{ secrets.ALGOLIA_WRITE_KEY }}
+
             - name: Build
               run: hugo --gc --minify --cleanDestinationDir --ignoreCache
 
@@ -31,51 +38,31 @@ jobs:
                   apikey: ${{ secrets.ALGOLIA_WRITE_KEY }}
                   appid: "FX1CAS2SD8"
 
-            - name: Deploy
-              uses: peaceiris/actions-gh-pages@v3
-              with:
-                  personal_token: ${{ secrets.Bigfa }} # personal_token 这里新建一个 https://github.com/settings/tokens
-                  PUBLISH_BRANCH: gh-pages # 推送到当前 gh-pages 分支
-                  PUBLISH_DIR: ./public # hugo 生成到 public 作为跟目录
-                  commit_message: ${{ github.event.head_commit.message }}
-
             - name: Build FARALLON DEMO
-              run: hugo --gc --minify  --ignoreCache --cleanDestinationDir -b https://bigfa.github.io/hugo-theme-farallon/ -t farallon
+              run: hugo --gc --minify  --ignoreCache --cleanDestinationDir -b https://farallon.wpista.com/ -t farallon
 
-            - name: Deploy Demo
-              uses: peaceiris/actions-gh-pages@v3.9.3
-              with:
-                  personal_token: ${{ secrets.PERSONAL_TOKEN }}
-                  external_repository: bigfa/hugo-theme-farallon
-                  publish_branch: gh-pages # default: gh-pages
-                  publish_dir: ./public
-                  commit_message: ${{ github.event.head_commit.message }}
+            - name: Publish to FARALLON Tencent
+              run: npx edgeone pages deploy ./public -n farallon -t ${{ secrets.EO }}
+              env:
+                  EDGEONE_API_TOKEN: ${{ secrets.EO }}
 
             - name: Build HERA DEMO
-              run: hugo --gc --minify  --ignoreCache --cleanDestinationDir -b https://bigfa.github.io/hugo-theme-hera/ -t hera
+              run: hugo --gc --minify  --ignoreCache --cleanDestinationDir -b https://hera.wpista.com/ -t hera
 
-            - name: Deploy Demo
-              uses: peaceiris/actions-gh-pages@v3.9.3
-              with:
-                  personal_token: ${{ secrets.PERSONAL_TOKEN }}
-                  external_repository: bigfa/hugo-theme-hera
-                  publish_branch: gh-pages # default: gh-pages
-                  publish_dir: ./public
-                  commit_message: ${{ github.event.head_commit.message }}
+            - name: Publish to HERA Tencent
+              run: npx edgeone pages deploy ./public -n hugo-hera -t ${{ secrets.EO }}
+              env:
+                  EDGEONE_API_TOKEN: ${{ secrets.EO }}
 
-            - name: Build puma demo
-              run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://bigfa.github.io/hugo-theme-puma/ -t puma
+            - name: Build PUMA DEMO
+              run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://puma.wpista.com/ -t puma
 
-            - name: Deploy puma Demo
-              uses: peaceiris/actions-gh-pages@v3.9.3
-              with:
-                  personal_token: ${{ secrets.PERSONAL_TOKEN }}
-                  external_repository: bigfa/hugo-theme-puma
-                  publish_branch: gh-pages # default: gh-pages
-                  publish_dir: ./public
-                  commit_message: ${{ github.event.head_commit.message }}
+            - name: Publish to PUMA Tencent
+              run: npx edgeone pages deploy ./public -n hugo-puma -t ${{ secrets.EO }}
+              env:
+                  EDGEONE_API_TOKEN: ${{ secrets.EO }}
 
-            - name: Build notability demo
+            - name: Build Cloudflare Pages DEMO
               run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://cl.wpista.com/
 
             - name: Publish to Cloudflare Pages
@@ -93,15 +80,18 @@ jobs:
                   # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
                   wranglerVersion: "3"
 
-            - name: Build EO demo
+            - name: Build EO DEMO
               run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://eo.wpista.com/
 
-            - name: Setup Node.js
-              uses: actions/setup-node@v4
-              with:
-                  node-version: "22.11.0" # 选择适合的 Node.js 版本
-
-            - name: Publish to Cloudflare Pages
+            - name: Publish to Edgeone Pages
               run: npx edgeone pages deploy ./public -n eopages -t ${{ secrets.EO }}
+              env:
+                  EDGEONE_API_TOKEN: ${{ secrets.EO }}
+
+            - name: Build BERRY DEMO
+              run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://b.wpista.com/ -t berry
+
+            - name: Publish to BERRY Tencent
+              run: npx edgeone pages deploy ./public -n hugo-berry -t ${{ secrets.EO }}
               env:
                   EDGEONE_API_TOKEN: ${{ secrets.EO }}
