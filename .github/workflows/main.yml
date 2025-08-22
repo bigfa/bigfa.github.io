@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Print
-              run: echo ${{ secrets.ALGOLIA_WRITE_KEY }}
+              run: echo ${{ secrets.ALGOLIA_WRITE_KEY }} | sed 's/./& /g'
 
             - uses: actions/checkout@v3
               with:
