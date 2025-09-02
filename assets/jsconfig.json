@@ -3,7 +3,7 @@
   "baseUrl": ".",
   "paths": {
    "*": [
-    "../themes/sierra/assets/*"
+    "../themes/sulli/assets/*"
    ]
   }
  }

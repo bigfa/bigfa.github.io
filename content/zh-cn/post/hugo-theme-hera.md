@@ -17,9 +17,15 @@ Hugo 当前版本 `0.2.5`，最后更新日期 `2025/08/17`
 
 [演示地址](https://hera.wpista.com/)
 
-## 使用指南
+[项目地址](https://github.com/bigfa/hugo-theme-hera)
 
-### 站点参数设置
+![首页](https://static.fatesinger.com/2025/01/x54dynv5egc505lx.jpg)
+
+![文章页](https://static.fatesinger.com/2025/01/lv8dzo2bgtzxc3an.jpg)
+
+### 使用指南
+
+#### 站点参数设置
 
 以下参数都在`[Params]`下
 

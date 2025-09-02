@@ -39,60 +39,10 @@ jobs:
                   apikey: ${{ secrets.ALGOLIA_WRITE_KEY }}
                   appid: "FX1CAS2SD8"
 
-            - name: Build FARALLON DEMO
-              run: hugo --gc --minify  --ignoreCache --cleanDestinationDir -b https://farallon.wpista.com/ -t farallon
-
-            - name: Publish to FARALLON Tencent
-              run: npx edgeone pages deploy ./public -n farallon -t ${{ secrets.EO }}
-              env:
-                  EDGEONE_API_TOKEN: ${{ secrets.EO }}
-
-            - name: Build HERA DEMO
-              run: hugo --gc --minify  --ignoreCache --cleanDestinationDir -b https://hera.wpista.com/ -t hera
-
-            - name: Publish to HERA Tencent
-              run: npx edgeone pages deploy ./public -n hugo-hera -t ${{ secrets.EO }}
-              env:
-                  EDGEONE_API_TOKEN: ${{ secrets.EO }}
-
-            - name: Build PUMA DEMO
-              run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://puma.wpista.com/ -t puma
-
-            - name: Publish to PUMA Tencent
-              run: npx edgeone pages deploy ./public -n hugo-puma -t ${{ secrets.EO }}
-              env:
-                  EDGEONE_API_TOKEN: ${{ secrets.EO }}
-
-            - name: Build Cloudflare Pages DEMO
-              run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://cl.wpista.com/
-
-            - name: Publish to Cloudflare Pages
-              uses: cloudflare/pages-action@v1
-              with:
-                  apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-                  accountId: d0a457cef81f6ea340f9ff6ca6b6ff7a
-                  projectName: notability
-                  directory: ./public
-                  # Optional: Enable this if you want to have GitHub Deployments triggered
-                  # gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-                  # Optional: Switch what branch you are publishing to.
-                  # By default this will be the branch which triggered this workflow
-                  # branch: main
-                  # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
-                  wranglerVersion: "3"
-
             - name: Build EO DEMO
               run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://eo.wpista.com/
 
             - name: Publish to Edgeone Pages
               run: npx edgeone pages deploy ./public -n eopages -t ${{ secrets.EO }}
-              env:
-                  EDGEONE_API_TOKEN: ${{ secrets.EO }}
-
-            - name: Build BERRY DEMO
-              run: hugo --gc --minify --ignoreCache --cleanDestinationDir -b https://b.wpista.com/ -t berry
-
-            - name: Publish to BERRY Tencent
-              run: npx edgeone pages deploy ./public -n hugo-berry -t ${{ secrets.EO }}
               env:
                   EDGEONE_API_TOKEN: ${{ secrets.EO }}

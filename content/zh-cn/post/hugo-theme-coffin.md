@@ -1,29 +1,27 @@
 ---
-title: "Hugo 主题 Farallon"
+title: "Hugo 主题 Coffin"
 description:
 categories: ["hugo"]
 tags: ["hugo"]
-date: 2023-10-30T21:07:22+08:00
-image:
+date: 2025-01-03T13:36:45+08:00
+cover:
 hidden: false
 comments: true
-weight: 1
-story_id: 101971
 ---
 
-![Hugo 主题 Farallon](https://static.fatesinger.com/2023/06/u1ak8xgmyn9ec24r.png)
+![Hugo 主题 Coffin](https://static.fatesinger.com/2025/02/f4lsfdiszbcrd42v.png)
 
 > 本主题使用古法制作，不依赖三方框架。
 
-Hugo 当前版本 `0.7.5`，最后更新日期 `2025/08/17`
+Hugo 当前版本 `0.1.0`，最后更新日期 `2025/08/17`
 
-[演示地址](https://farallon.wpista.com/)
+[演示地址](https://coffin.wpista.com/)
 
-[项目地址](https://github.com/bigfa/hugo-theme-farallon)
+[项目地址](https://github.com/bigfa/hugo-theme-coffin)
 
-![首页](https://static.fatesinger.com/2023/09/qqoyxx6xehxty96h.png)
+![首页](https://static.fatesinger.com/2025/04/cj4fss4k2basifw3.jpg)
 
-![文章页](https://static.fatesinger.com/2023/09/sgkutfp57emltt5x.jpg)
+![文章页](https://static.fatesinger.com/2025/04/qv1uocungxhgba4y.jpg)
 
 ### 使用指南
 
@@ -143,6 +141,7 @@ layout: travel
 title: "Gears"
 subtitle: "my fuji gears"
 date: 2021-03-06T15:39:00-06:00
+draft: false
 faves:
     [
         {

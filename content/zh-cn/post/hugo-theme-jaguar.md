@@ -1,29 +1,23 @@
 ---
-title: "Hugo 主题 Farallon"
+title: "Hugo 主题 Jaguar"
 description:
 categories: ["hugo"]
 tags: ["hugo"]
-date: 2023-10-30T21:07:22+08:00
-image:
+date: 2025-09-01T01:20:09+08:00
+cover:
 hidden: false
 comments: true
-weight: 1
-story_id: 101971
 ---
 
-![Hugo 主题 Farallon](https://static.fatesinger.com/2023/06/u1ak8xgmyn9ec24r.png)
+![Hugo 主题 Jaguar](https://static.fatesinger.com/2025/06/4w7o99g1s7u5tjic.png)
 
 > 本主题使用古法制作，不依赖三方框架。
 
-Hugo 当前版本 `0.7.5`，最后更新日期 `2025/08/17`
+Hugo 当前版本 `0.0.2`，最后更新日期 `2025/09/01`
 
-[演示地址](https://farallon.wpista.com/)
+[演示地址](https://j.wpista.com/)
 
-[项目地址](https://github.com/bigfa/hugo-theme-farallon)
-
-![首页](https://static.fatesinger.com/2023/09/qqoyxx6xehxty96h.png)
-
-![文章页](https://static.fatesinger.com/2023/09/sgkutfp57emltt5x.jpg)
+[项目地址](https://github.com/bigfa/hugo-theme-jaguar)
 
 ### 使用指南
 
@@ -67,18 +61,6 @@ hugo new content memo/1.md
 ```
 
 如果你想用其他别名也可以，`memo`换为你想用的就可以了。
-
-### 卡片分类页面使用方法
-
-在`content`目录下新建你想要使用模版的页面，比如你的分类是`travel`，则新建`categories/travel/_index.md`,然后编辑文件，设置`layout`为`travel` 即可
-
-```
----
-title: "旅行"
-description: "旅行体验"
-layout: travel
----
-```
 
 ### 作者信息
 
